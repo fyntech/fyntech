@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fyntech - Tech events på Fyn</title>
+  </head>
+  <body>
+    {% for event in site.data.events %}
+    <h3>{{ event.title }}</h3>
+    <b>Hvornår:</b> {{ event.time }}<br />
+    <b>Hvor:</b> {{ event.venue }}<br />
+    <p>{{ event.text }}</p>
+    {% endfor %}
+  </body>
+</html>
