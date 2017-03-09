@@ -3,3 +3,8 @@
   date: "Torsdag xx-yy-zz"
   time: "18:00-21:00"
   venue: "Et sted"
+- title: "Et event"
+  text: "En beskrivelse"
+  date: "Torsdag xx-yy-zz"
+  time: "18:00-21:00"
+  venue: "Et sted"
