@@ -1,0 +1,18 @@
+# Jekyll config file for static variables
+
+# Site settings
+title: Fyntech - Tech Events på Fyntech
+description: > # En samling på spændende og interessante Tech relaterede events på Fyn.
+github_username: https://github.com/fyntech
+url: http://fyntech.dk/
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
