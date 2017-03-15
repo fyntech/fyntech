@@ -9,10 +9,11 @@ baseurl: ""
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-slate
 gems:
   - jekyll-paginate
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+
