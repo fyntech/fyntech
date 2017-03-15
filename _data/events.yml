@@ -4,19 +4,34 @@
   date: "Torsdag 30-03-17"
   time: "19:00-21:00"
   venue: "TBD"
+  price: Free
+  membership: No
+  link: www.meetup.com
+
 - title: "Social - April"
   text: "Let's be social again!."
   org: "CODE Odense"
   date: "Torsdag 27-04-17"
   time: "19:00-21:00"
   venue: "Nelle's Coffee & Wine Pantheonsgade, Rosenbæk Torv 1A 5000, Odense"
+  price: Free
+  membership: No
+  link: www.meetup.com
+
 - title: "Et event"
   text: "En beskrivelse"
   date: "Torsdag xx-yy-zz"
   time: "18:00-21:00"
   venue: "Et sted"
+  price: Free
+  membership: No
+  link: www.meetup.com
+
 - title: "Et event"
   text: "En beskrivelse"
   date: "Torsdag xx-yy-zz"
   time: "18:00-21:00"
   venue: "Et sted"
+  price: Free
+  membership: No
+  link: www.meetup.com
