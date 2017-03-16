@@ -5,6 +5,7 @@
   time: "19:00-21:00"
   venue: "TBD"
   price: Free
+  language: Danish
   membership: No
   link: www.meetup.com
 
@@ -15,6 +16,7 @@
   time: "19:00-21:00"
   venue: "Nelle's Coffee & Wine Pantheonsgade, Rosenbæk Torv 1A 5000, Odense"
   price: Free
+  language: Danish
   membership: No
   link: www.meetup.com
 
@@ -24,6 +26,7 @@
   time: "18:00-21:00"
   venue: "Et sted"
   price: Free
+  language: Danish
   membership: No
   link: www.meetup.com
 
@@ -33,5 +36,6 @@
   time: "18:00-21:00"
   venue: "Et sted"
   price: Free
+  language: Danish
   membership: No
   link: www.meetup.com
