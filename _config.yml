@@ -3,16 +3,30 @@
 # Site settings
 title: Fyntech - Tech Events på Fyntech
 description: En samling af spændende og interessante Tech relaterede events på Fyn.
-baseurl: ""
-github_username: https://github.com/fyntech
+github_username: fyntech
 url: http://fyntech.dk/
 
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-midnight
-#minima
+
+future: true
+timezone: Europe/Copenhagen
+
+collections:
+  events:
+    output: true
+    permalink: /:collection/:year/:month/:title:output_ext
+
+defaults:
+  # _events
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: event
+
 gems:
-#  - jekyll-paginate
   - jekyll-feed
 exclude:
   - Gemfile
