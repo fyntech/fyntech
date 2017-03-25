@@ -1,15 +1,19 @@
 ---
 layout: base
 ---
-<div class="row">
-  <div class="eight columns">
-    {% for event in site.data.events %}
-    <h3>{{ event.title }}</h3>
-    <b>Hvornår:</b> {{ event.date }}, kl: {{ event.time }}<br />
-    <b>Hvor:</b> {{ event.venue }}<br />
-    <b>Hvem:</b> {{ event.org }}
-    <p>{{ event.text }}</p>
+<div class="events">
+    {% for event in site.events %}
+      <div vocab="http://schema.org/" class="event" typeof="Event">
+        {% if event.title %}
+          <h2 class="event-title" property="name">{{ event.title }}</h2>
+        {% endif %}
+        {% if event.date %}
+          <time class="event-date" property="startDate" content="{{ event.date }}" datetime="{{ event.date }}">{{ event.date | date: "%-d %b %Y - %H:%M"}}</time>
+        {% endif %}
+        {% if event.link and event.link != "" %}
+          <a property="url" href="{{ event.link }}" target="_blank">More info</a>
+        {% endif %}
+      </div>
     {% endfor %}
   </div>
-
 </div>
