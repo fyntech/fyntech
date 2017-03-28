@@ -1,7 +1,7 @@
 ---
 title: "Biograftur samt debat - Hidden Figures"
 date: 2017-04-02 15:30:00
-location: "EAL - UV-labs (A0.07 + A0.08 + A0.09)"
-link: "https://www.meetup.com/CODE-Odense/events/236962859/"
+location: "Café Biografen, Odense"
+link: "https://www.prosa.dk/kalender/hele-kalenderen/?tx_moccrmintegration_courses%5Bcourse%5D=1213&tx_moccrmintegration_courses%5Baction%5D=show&tx_moccrmintegration_courses%5Bcontroller%5D=Course&cHash=d98f3d995dd0eda3484a52857c59e4c1"
 organizer: "Prosa U35 og Prosa PIO"
 ---
