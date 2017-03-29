@@ -8,10 +8,13 @@ url: http://fyntech.dk/
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-midnight
 
 future: true
 timezone: Europe/Copenhagen
+
+sass:
+    style: compressed
+    sass_dir: _scss
 
 collections:
   events:
