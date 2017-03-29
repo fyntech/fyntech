@@ -1,6 +1,6 @@
 ---
 title: "Brætspilsaften"
-date: 2017-04-18 19:00:00
+date: "2017-04-18 19:00:00"
 location: "Papas Papbar, Odense"
 link: ""
 organizer: "PROSA U35 SYD"
