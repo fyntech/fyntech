@@ -18,17 +18,16 @@ layout: base
           {% if event.title %}
             <h2 class="event-title" property="name">{{ event.title }}</h2>
           {% endif %}
+          {{ event.excerpt }}
         </section>
         <section class="colorful">
           {% if event.organizer %}
             <div class="event-organizer">
-              <span class="label">Organizer:</span>
-              {{ event.organizer }}
+              <b>{{ event.organizer }}</b>
             </div>
           {% endif %}
           {% if event.location %}
             <div class="event-location">
-              <span class="label">Location:</span>
               {{ event.location }}
             </div>
           {% endif %}
