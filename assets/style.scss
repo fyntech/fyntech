@@ -1,5 +1,7 @@
 ---
 ---
+@import "variables";
+
 html,
 body {
   padding: 0;
@@ -31,6 +33,11 @@ h1 {
   margin-bottom: 15px;
 }
 
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+}
+
 .wrapper {
   max-width: 600px;
   margin-left: auto;
@@ -47,6 +54,10 @@ h1 {
   .events-header {
     padding-left: 30px;
     margin-bottom: 30px;
+    @media (max-width: $screen-phone) {
+      padding-left: 15px;
+      margin-bottom: 15px;
+    }
 
     .events-description {
       font-style: italic;
@@ -58,10 +69,10 @@ h1 {
 .event {
   padding-left: 15px;
 
-
   h2 {
     margin: 0;
   }
+
   section {
     padding: 15px;
     box-sizing: border-box;
@@ -69,6 +80,16 @@ h1 {
     &:first-of-type {
       padding-top: 30px;
       padding-bottom: 30px;
+      @media (max-width: $screen-phone) {
+        padding-left: 0px;
+        padding-bottom: 20px
+      }
+
+      p {
+        margin-bottom: 0;
+        font-style: italic;
+        color: #666;
+      }
     }
   }
 
@@ -82,10 +103,16 @@ h1 {
     background-image: url('{{ site.baseurl }}/assets/img/icon-circle.png');
     background-repeat: no-repeat;
     background-position: left 3px;
+    @media (max-width: $screen-phone) {
+      margin-left: -20px;
+      padding-left: 20px;
+    }
   }
+
   .event-title {
     color: #333;
   }
+
   .event-url {
     display: block;
   }
