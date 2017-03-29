@@ -1,15 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Fyntech - Tech events på Fyn</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
-    {% for event in site.data.events %}
-    <h3>{{ event.title }}</h3>
-    <b>Hvornår:</b> {{ event.time }}<br />
-    <b>Hvor:</b> {{ event.venue }}<br />
-    <p>{{ event.text }}</p>
-    {% endfor %}
+    <div class="wrapper">
+      <section>
+        {{ content }}
+      </section>
+    </div>
   </body>
 </html>

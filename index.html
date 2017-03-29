@@ -1,3 +1,41 @@
 ---
 layout: base
 ---
+<div class="events">
+    <div class="events-header">
+      <h1>Fyntech.dk</h1>
+      <div class="events-description">
+        En samling af spændende og interessante Tech relaterede events på Fyn.
+      </div>
+    </div>
+
+    {% for event in site.events %}
+      <div vocab="http://schema.org/" class="event" typeof="Event">
+        <section class="">
+          {% if event.date %}
+            <time class="event-date" property="startDate" content="{{ event.date }}" datetime="{{ event.date }}">{{ event.date | date: "%-d %b %Y - %H:%M"}}</time>
+          {% endif %}
+          {% if event.title %}
+            <h2 class="event-title" property="name">{{ event.title }}</h2>
+          {% endif %}
+          {{ event.excerpt }}
+        </section>
+        <section class="colorful">
+          {% if event.organizer %}
+            <div class="event-organizer">
+              <b>{{ event.organizer }}</b>
+            </div>
+          {% endif %}
+          {% if event.location %}
+            <div class="event-location">
+              {{ event.location }}
+            </div>
+          {% endif %}
+          {% if event.link and event.link != "" %}
+            <a class="event-url btn" property="url" href="{{ event.link }}" target="_blank">Sign up / More info</a>
+          {% endif %}
+        </section>
+      </div>
+    {% endfor %}
+  </div>
+</div>

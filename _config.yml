@@ -1,0 +1,36 @@
+# Jekyll config file for static variables
+
+# Site settings
+title: Fyntech - Tech Events på Fyntech
+description: En samling af spændende og interessante Tech relaterede events på Fyn.
+github_username: fyntech
+url: http://fyntech.dk/
+
+# Build settings
+markdown: kramdown
+
+future: true
+timezone: Europe/Copenhagen
+
+sass:
+    style: compressed
+    sass_dir: _scss
+
+collections:
+  events:
+    output: true
+    permalink: /:collection/:year/:month/:title:output_ext
+
+defaults:
+  # _events
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: event
+
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
