@@ -1,6 +1,6 @@
 ---
 title: "Cozy course: Growing Onions"
-date: 2017-04-22 14:00:00
+date: 2017-04-22 14:00:00 Europe/Copenhagen
 location: "Ajour System <br> Sanderumvej 16B, Odense"
 link: "https://www.meetup.com/CODE-Odense/events/237845286/"
 organizer: "Code Odense"
