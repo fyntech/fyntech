@@ -13,7 +13,7 @@ layout: base
       <div vocab="http://schema.org/" class="event" typeof="Event">
         <section class="">
           {% if event.date %}
-            <time class="event-date" property="startDate" content="{{ event.date }}" datetime="{{ event.date }}">{{ event.date | date: "%-d %b %Y - %H:%M"}}</time>
+            <time class="event-date" property="startDate" content="{{ event.date }}" datetime="{{ event.date }}">{{ event.date | append: " Europe/Copenhagen" | date: "%-d %b %Y - %H:%M"}}</time>
           {% endif %}
           {% if event.title %}
             <h2 class="event-title" property="name">{{ event.title }}</h2>
