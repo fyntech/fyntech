@@ -1,7 +1,7 @@
 ---
 title: "Torsdagsbar med Peter Kofod"
 date: 2017-05-11 Europe/Copenhagen
-location: "To be announced"
+location: "PROSA, Overgade 54, 5000 Odense C"
 link: "https://www.prosa.dk/kalender/hele-kalenderen/?tx_moccrmintegration_courses%5Bcourse%5D=1221&tx_moccrmintegration_courses%5Baction%5D=show&tx_moccrmintegration_courses%5Bcontroller%5D=Course&cHash=2544c0e86d477ae21f5131f389d20fc1"
 organizer: "PROSA U35"
 ---
