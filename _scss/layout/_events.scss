@@ -1,0 +1,23 @@
+.events {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-left: 1px solid #eee;
+
+  .events-header {
+    padding-left: 30px;
+    margin-bottom: 30px;
+    @media (max-width: $screen-phone) {
+      padding-left: 15px;
+      margin-bottom: 15px;
+    }
+
+    .events-description {
+      font-style: italic;
+      color: #666;
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+  }
+}
