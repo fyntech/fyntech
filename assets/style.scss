@@ -3,9 +3,9 @@
 @import "variables";
 
 @font-face {
-    font-family: 'montserratextralight';
-    src: url('font/montserrat-extralight-webfont.woff2') format('woff2'),
-         url('font/montserrat-extralight-webfont.woff') format('woff');
+    font-family: 'montserratlight';
+    src: url('font/montserrat-light-webfont.woff2') format('woff2'),
+         url('font/montserrat-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -138,7 +138,7 @@ h2 {
       p {
         margin-bottom: 0;
         font-size: 1.5rem;
-        font-family: montserratextralight;
+        font-family: montserratlight;
         color: #666;
       }
     }
@@ -173,7 +173,7 @@ h2 {
   }
 
   .colorful {
-    font-family: montserratextralight;
+    font-family: montserratlight;
     background-color: #E64949;
     color: white;
     box-shadow: 0px 4px 3px -2px rgba(0,0,0,0.2);
@@ -182,7 +182,7 @@ h2 {
 
 footer{
   text-align: center;
-  font-family: montserratextralight;
+  font-family: montserratlight;
   margin-top: 30px;
 
   img{
