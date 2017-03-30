@@ -20,7 +20,7 @@ layout: base
           {% endif %}
           {{ event.excerpt }}
         </section>
-        <section class="colorful">
+        <section class="event-info {% if event.category %}category category-{{event.category}}{% endif %}">
           {% if event.organizer %}
             <div class="event-organizer">
               <b>{{ event.organizer }}</b>
