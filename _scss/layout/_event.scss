@@ -42,12 +42,21 @@
     margin-left: -35px;
     padding-left: 35px;
     padding-bottom: 20px;
-    background-image: url('/assets/img/icon-circle.png');
-    background-repeat: no-repeat;
-    background-position: left 3.5px;
+    position: relative;
     @media (max-width: $screen-phone) {
       margin-left: -20px;
       padding-left: 20px;
+    }
+
+    &::after{
+      content: "";
+      width: 9px;
+      height: 9px;
+      background: #CCC;
+      border-radius: 5px;
+      position: absolute;
+      left: 0;
+      top: 4px;
     }
   }
 
