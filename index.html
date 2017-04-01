@@ -11,6 +11,9 @@ layout: base
     </div>
 
     {% for event in site.events %}
+      {% if event.expired %}
+        {% continue %}
+      {% endif %}
       <div vocab="http://schema.org/" class="event" typeof="Event">
         <section class="">
           {% if event.date %}
