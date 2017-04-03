@@ -6,5 +6,5 @@ link: "https://www.meetup.com/Code-U-Odense/events/238920957/"
 organizer: "CODE U Odense"
 category: "code-u-odense"
 ---
-This time we'll look at <a href="https://concourse-ci.com" target="_blank">Concourse CI</a>. An intriguing perspective on automation engines.<br>
+This time we'll look at <a href="http://concourse-ci.com" target="_blank">Concourse CI</a>. An intriguing perspective on automation engines.<br>
 We'll have some great teachers joining us, running a workshop for the rest of us. 
