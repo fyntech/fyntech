@@ -8,7 +8,7 @@ Name the event file with the date and then the event name, format: y-m-d-title.m
 
 Be sure to at least add a title, a date, and an organizer.
 Events will be colored according to which category you choose, currently available categories:
-codeodense, eal, flug, ida, prosa & vuc
+codeodense, eal, flug, ida, prosa, vuc & eal-prosa
 
 Here's a sample event file, with all available fields:
 ```yaml
