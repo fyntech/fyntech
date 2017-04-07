@@ -1,26 +1,31 @@
+$categories:(
+    codeodense: hsl(282, 72%, 38%),
+    code-u-odense: #559E33,
+    eal: #006E79,
+    flug: #29ABE1,
+    ida: #009FE3,
+    prosa: #C52C1A,
+    vuc: #00a357
+  );
+
+$combo-categories:(
+    eal-prosa: (map-get($categories, prosa), map-get($categories, eal))
+  );
+
+
 .category {
-  &.category-codeodense {
-    background-color: hsl(282, 72%, 38%);
+  @each $category, $color in $categories {
+    &.category-#{$category} {
+      background: $color;
+      
+      @include category-btn($color);
+    }
   }
-  &.category-code-u-odense{
-    background-color: #559E33;
-  }
-  &.category-eal {
-    background-color: #006E79;
-  }
-  &.category-flug {
-    background-color: #29ABE1;
-  }
-  &.category-ida {
-    background-color: #009FE3;
-  }
-  &.category-prosa {
-    background-color: #C52C1A;
-  }
-  &.category-vuc {
-    background-color: #00a357;
-  }
-  &.category-eal-prosa{
-    background: linear-gradient(45deg, #c52c1a 0%,#c52c1a 50%,#006e79 50%,#006e79 100%);
+  @each $category, $colors in $combo-categories {
+    &.category-#{$category} {
+      background: linear-gradient(45deg, #{nth($colors, 1)} 0%,#{nth($colors, 1)} 50%,#{nth($colors, 2)} 50%,#{nth($colors, 2)} 100%);
+
+      @include category-btn(nth($colors, 1));
+    }
   }
 }

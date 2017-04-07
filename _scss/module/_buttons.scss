@@ -3,7 +3,7 @@
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
@@ -12,12 +12,9 @@
   cursor: pointer;
   user-select: none;
   background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
   text-decoration: none;
   color: #333;
   background-color: #fff;
-  border-color: #ccc;
 
   &:focus {
     color: #333;
@@ -28,5 +25,22 @@
     color: #333;
     background-color: #e6e6e6;
     border-color: #adadad;
+  }
+}
+
+@mixin category-btn($color){
+  .btn{
+    background-color: lighten($color, 70%);
+    border-bottom: 2px solid darken($color, 10%);
+    color: $color;
+
+    &:hover{
+      background: lighten($color, 50%);;
+    }
+    &:active{
+      border-bottom: 2px solid $color;
+      position: relative;
+      bottom: -2px;
+    }
   }
 }
