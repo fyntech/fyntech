@@ -36,8 +36,9 @@
   }
 
   .event-date {
-    font-size: 1.2rem;
-    color: #999;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
     display: block;
     margin-left: -35px;
     padding-left: 35px;
@@ -53,7 +54,7 @@
       width: 9px;
       height: 9px;
       background: #CCC;
-      border-radius: 5px;
+      border-radius: 50%;
       position: absolute;
       left: 0;
       top: 4px;
