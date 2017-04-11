@@ -2,6 +2,11 @@
 _site
 .sass-cache/
 .jekyll-metadata
+
 .gem
 .bundle
+
 .DS_Store
+
+deploy_key
+deploy_key.pub
