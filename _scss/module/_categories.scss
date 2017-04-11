@@ -16,16 +16,26 @@ $combo-categories:(
 .category {
   @each $category, $color in $categories {
     &.category-#{$category} {
-      background: $color;
+      .event-info{
+        background: $color;
       
-      @include category-btn($color);
+        @include category-btn($color);
+      }
+      .event-date{
+        background: $color;
+      }
     }
   }
   @each $category, $colors in $combo-categories {
     &.category-#{$category} {
-      background: linear-gradient(45deg, #{nth($colors, 1)} 0%,#{nth($colors, 1)} 49.9%,#{nth($colors, 2)} 50%,#{nth($colors, 2)} 100%);
+      .event-info{
+        background: linear-gradient(45deg, #{nth($colors, 1)} 0%,#{nth($colors, 1)} 49.9%,#{nth($colors, 2)} 50%,#{nth($colors, 2)} 100%);
 
-      @include category-btn(nth($colors, 1));
+        @include category-btn(nth($colors, 1));
+      }
+      .event-date{
+        background: linear-gradient(45deg, #{nth($colors, 1)} 0%,#{nth($colors, 1)} 49.9%,#{nth($colors, 2)} 50%,#{nth($colors, 2)} 100%);;
+      }
     }
   }
 }
