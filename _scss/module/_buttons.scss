@@ -3,7 +3,7 @@
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
@@ -15,6 +15,7 @@
   text-decoration: none;
   color: #333;
   background-color: #fff;
+  border-bottom: 2px solid rgba(0,0,0,.5);
 
   &:focus {
     color: #333;
@@ -30,9 +31,7 @@
 
 @mixin category-btn($color){
   .btn{
-    background-color: lighten($color, 70%);
     border-bottom: 2px solid darken($color, 10%);
-    color: $color;
 
     &:hover{
       background: lighten($color, 50%);;
