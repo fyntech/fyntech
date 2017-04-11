@@ -5,6 +5,7 @@ title: Fyntech - Tech Events på Fyntech
 description: En samling af spændende og interessante Tech relaterede events på Fyn.
 github_username: fyntech
 url: http://fyntech.dk/
+repository: fyntech/fyntech.github.io
 baseurl:
 
 # Build settings
