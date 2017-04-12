@@ -1,16 +1,8 @@
-language: ruby
-cache: bundler
-rvm:
-- 2.2
-before_script:
-- chmod +x ./deploy.sh
-script: bash ./deploy.sh
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - COMMIT_AUTHOR_EMAIL: kasper@friischristensen.com
-  - ENCRYPTION_LABEL: b6e4e1e0ae98
-sudo: false
-before_install:
-- openssl aes-256-cbc -K $encrypted_b6e4e1e0ae98_key -iv $encrypted_b6e4e1e0ae98_iv
-  -in fyntech-travis.enc -out fyntech-travis -d
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  target_branch: gh-pages
+  email: kasper@friischristensen.com
+  on:
+    branch: master
