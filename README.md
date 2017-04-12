@@ -22,3 +22,6 @@ category: "prosa"
 ---
 Short event description
 ```
+
+
+[![Build Status](https://travis-ci.org/fyntech/fyntech.github.io.svg?branch=master)](https://travis-ci.org/fyntech/fyntech.github.io)
