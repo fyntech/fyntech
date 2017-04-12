@@ -14,7 +14,7 @@ layout: base
       {% if event.expired %}
         {% continue %}
       {% endif %}
-      <div vocab="http://schema.org/" class="event" typeof="Event">
+      <div vocab="http://schema.org/" class="event {% if event.category %}category category-{{event.category}}{% endif %}" typeof="Event">
         <section class="">
           {% if event.date %}
             <time class="event-date" property="startDate" content="{{ event.date }}" datetime="{{ event.date }}">{{ event.date | append: " Europe/Copenhagen" | date: "%-d %b %Y - %H:%M"}}</time>
@@ -24,7 +24,7 @@ layout: base
           {% endif %}
           {{ event.excerpt }}
         </section>
-        <section class="event-info {% if event.category %}category category-{{event.category}}{% endif %}">
+        <section class="event-info">
           {% if event.organizer %}
             <div class="event-organizer">
               <b>{{ event.organizer }}</b>

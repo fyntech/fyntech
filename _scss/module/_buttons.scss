@@ -12,12 +12,10 @@
   cursor: pointer;
   user-select: none;
   background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
   text-decoration: none;
   color: #333;
   background-color: #fff;
-  border-color: #ccc;
+  border-bottom: 2px solid rgba(0,0,0,.5);
 
   &:focus {
     color: #333;
@@ -28,5 +26,20 @@
     color: #333;
     background-color: #e6e6e6;
     border-color: #adadad;
+  }
+}
+
+@mixin category-btn($color){
+  .btn{
+    border-bottom: 2px solid darken($color, 10%);
+
+    &:hover{
+      background: lighten($color, 50%);;
+    }
+    &:active{
+      border-bottom: 2px solid $color;
+      position: relative;
+      bottom: -2px;
+    }
   }
 }
