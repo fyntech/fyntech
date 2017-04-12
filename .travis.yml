@@ -1,7 +1,12 @@
+sudo: false
 language: ruby
 cache: bundler
+branches: { only: master }
 rvm:
 - 2.2
+
+script: bundle exec jekyll build
+
 deploy:
   provider: pages
   skip_cleanup: true
