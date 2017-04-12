@@ -1,12 +1,12 @@
-*.sw*
 _site
-.sass-cache/
+.sass-cache
 .jekyll-metadata
+bower_components
+deploy_key
+deploy_key.pub
 
 .gem
 .bundle
 
 .DS_Store
-
-deploy_key
-deploy_key.pub
+*.sw*
