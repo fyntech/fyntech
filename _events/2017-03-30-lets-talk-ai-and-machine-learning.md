@@ -5,6 +5,5 @@ location: "EAL - UV-labs (A0.07 + A0.08 + A0.09)<br>Seebladsgade 1, 5000 Odense 
 link: "https://www.meetup.com/CODE-Odense/events/236962859/"
 organizer: "CODE Odense"
 category: "codeodense"
-expired: true
 ---
 CODE Odense invites to an evening about machine learning and AI. Both ML and AI are current hot topics and will in the future continue to be ever more important with self-driving cars, robotics and big data.
