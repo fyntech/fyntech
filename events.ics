@@ -1,0 +1,24 @@
+---
+layout: none
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:http://www.fyntech.dk/
+METHOD:PUBLISH
+{% assign current_date = site.time | date: "%s" %}
+{% for event in site.events %}
+{% assign expire_date = event.date | date: "%s" %}
+{% if expire_date < current_date %}{% continue %}{% endif %}
+{% assign location = event.location | replace: ",", "\," %}
+BEGIN:VEVENT
+UID:{{ event.date | date: "%Y%m%d" }}@fyntech.dk
+ORGANIZER;CN="{{ event.organizer }}":MAILTO:
+LOCATION:{{ location | replace: "<br>", "\n" }}
+SUMMARY:{{ event.title }}
+CLASS:PUBLIC
+DTSTART:{{ event.date | date: "%Y%m%d" }}T170000Z
+DTEND:{{ event.date | date: "%Y%m%d" }}T190000Z
+DTSTAMP:{{ event.date | date: "%Y%m%d" }}T170000Z
+END:VEVENT
+{% endfor %}
+END:VCALENDAR
