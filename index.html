@@ -23,8 +23,12 @@ layout: base
 
       <div vocab="http://schema.org/" class="event {% if event.category %}category category-{{event.category}}{% endif %}" typeof="Event">
         <section class="">
-          {% if event.date %}
-            <time class="event-date" property="startDate" content="{{ event.date }}" datetime="{{ event.date }}">{{ event.date | append: " Europe/Copenhagen" | date: "%-d %b %Y - %H:%M"}}</time>
+          {% if event.dateStart %}
+            <time class="event-date" property="startDate" content="{{ event.dateStart }}" datetime="{{ event.dateStart }}">{{ event.dateStart | date: "%-d %b %Y &bull; %H:%M"}}
+            {% if event.dateEnd %}
+             - {{ event.dateEnd | date: "%H:%M" }}
+            {% endif %}
+            </time>
           {% endif %}
           {% if event.title %}
             <h2 class="event-title" property="name">{{ event.title }}</h2>
