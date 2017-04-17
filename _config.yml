@@ -33,6 +33,7 @@ defaults:
 
 gems:
   - jekyll-feed
+  - liquid-md5
 exclude:
   - Gemfile
   - Gemfile.lock
