@@ -12,7 +12,7 @@ X-WR-TIMEZONE:Europe/Copenhagen
 {% if expire_date < current_date %}{% continue %}{% endif %}
 {% assign location = event.location | replace: ",", "\," %}
 BEGIN:VEVENT
-UID:{{ event.dateStart | date: "%Y%m%d" }}@fyntech.dk
+UID:{{ event.organizer | append: event.title | md5 }}-{{ event.dateStart | date: "%Y%m%d" }}@fyntech.dk
 ORGANIZER;CN="{{ event.organizer }}":MAILTO:
 LOCATION:{{ location | replace: "<br>", "\n" }}
 SUMMARY:{{ event.title }}
