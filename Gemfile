@@ -12,6 +12,7 @@ ruby RUBY_VERSION
 gem "jekyll", "~> 3.4"
 #gem "minima", "~> 2.0"
 gem "liquid-md5"
+gem "activesupport"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

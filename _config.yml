@@ -34,4 +34,5 @@ defaults:
 gems:
   - jekyll-feed
   - liquid-md5
+  - activesupport
 exclude:

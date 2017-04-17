@@ -5,7 +5,7 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:http://www.fyntech.dk/
 METHOD:PUBLISH
-X-WR-TIMEZONE:Europe/Copenhagen{% 
+X-WR-TIMEZONE:{{ site.timezone }}{% 
 	assign current_date = site.time | date: "%s" %}{% 
 	for event in site.events %}{% 
 	if event.dateEnd %}{% 
@@ -23,9 +23,9 @@ ORGANIZER;CN="{{ event.organizer }}":MAILTO:
 LOCATION:{{ location | replace: "<br>", "\n" }}
 SUMMARY:{{ event.title }}
 CLASS:PUBLIC
-DTSTART:{{ event.dateStart | date: "%s" | minus: 7200 | date: "%Y%m%dT%H%M%SZ" }}{% 
+DTSTART:{{ event.dateStart | toUTC | date: "%Y%m%dT%H%M%SZ" }}{% 
 	if event.dateEnd %}
-DTEND:{{ event.dateEnd | date: "%s" | minus: 7200 | date: "%Y%m%dT%H%M%SZ" }}{% 
+DTEND:{{ event.dateEnd | toUTC | date: "%Y%m%dT%H%M%SZ" }}{% 
 	endif %}
 DTSTAMP:{{ event.dateStart | date: "%Y%m%d" }}T170000Z
 END:VEVENT{% 
