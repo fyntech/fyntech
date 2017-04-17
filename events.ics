@@ -18,7 +18,9 @@ LOCATION:{{ location | replace: "<br>", "\n" }}
 SUMMARY:{{ event.title }}
 CLASS:PUBLIC
 DTSTART:{{ event.dateStart | date: "%s" | minus: 7200 | date: "%Y%m%dT%H%M%SZ" }}
+{% if event.dateEnd %}
 DTEND:{{ event.dateEnd | date: "%s" | minus: 7200 | date: "%Y%m%dT%H%M%SZ" }}
+{% endif %}
 DTSTAMP:{{ event.dateStart | date: "%Y%m%d" }}T170000Z
 END:VEVENT
 {% endfor %}
