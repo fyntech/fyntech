@@ -16,7 +16,11 @@ layout: base
       {% comment %}
         Check if the event is newer than the current date.
       {% endcomment %}
+      {% if event.dateEnd %}
       {% assign expire_date = event.dateEnd | date: "%s" %}
+      {% else %}
+      {% assign expire_date = event.date | date: "%s" %}
+      {% endif %}
       {% if expire_date < current_date %}
         {% continue %}
       {% endif %}

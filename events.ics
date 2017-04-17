@@ -8,7 +8,11 @@ METHOD:PUBLISH
 X-WR-TIMEZONE:Europe/Copenhagen
 {% assign current_date = site.time | date: "%s" %}
 {% for event in site.events %}
+{% if event.dateEnd %}
+{% assign expire_date = event.dateEnd | date: "%s" %}
+{% else %}
 {% assign expire_date = event.date | date: "%s" %}
+{% endif %}
 {% if expire_date < current_date %}{% continue %}{% endif %}
 {% assign location = event.location | replace: ",", "\," %}
 BEGIN:VEVENT
