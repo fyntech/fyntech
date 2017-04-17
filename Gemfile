@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.4.0"
+ruby RUBY_VERSION
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -12,7 +12,7 @@ ruby "2.4.0"
 gem "jekyll", "~> 3.4"
 #gem "minima", "~> 2.0"
 gem "liquid-md5"
-gem "activesupport"
+gem "activesupport", "~> 4.2"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
