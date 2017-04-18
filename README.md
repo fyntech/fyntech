@@ -14,7 +14,8 @@ Here's a sample event file, with all available fields:
 ```yaml
 ---
 title: "Event title"
-date: 2017-01-01 00:00:00 Europe/Copenhagen
+dateStart: 2017-01-01 00:00:00 Europe/Copenhagen
+dateEnd: 2017-01-01 00:00:00 Europe/Copenhagen
 location: "Location name <br> Adress"
 link: "http://example.com/signup"
 organizer: "PROSA U35"
