@@ -11,7 +11,7 @@ X-WR-TIMEZONE:{{ site.timezone }}{%
 	if event.dateEnd %}{% 
 	 assign expire_date = event.dateEnd | date: "%s" %}{% 
 	else %}{% 
-	 assign expire_date = event.date | date: "%s" %}{% 
+	 assign expire_date = event.dateStart | date: "%s" %}{% 
 	endif %}{% 
 	if expire_date < current_date %}{%
     continue %}{% 
