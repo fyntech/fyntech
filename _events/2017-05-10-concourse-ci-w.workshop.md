@@ -1,7 +1,7 @@
 ---
 title: "Concourse CI (CI/CD) w/workshop"
-dateStart: 2017-04-25 16:30:00 Europe/Copenhagen
-dateEnd: 2017-04-25 20:30:00 Europe/Copenhagen
+dateStart: 2017-05-10 16:30:00 Europe/Copenhagen
+dateEnd: 2017-05-10 20:30:00 Europe/Copenhagen
 location: "To be announced"
 link: "https://www.meetup.com/Code-U-Odense/events/238920957/"
 organizer: "CODE U Odense"
