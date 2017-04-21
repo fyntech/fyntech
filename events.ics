@@ -5,17 +5,20 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:http://www.fyntech.dk/
 METHOD:PUBLISH
-X-WR-TIMEZONE:{{ site.timezone }}{% 
-	assign current_date = site.time | date: "%s" %}{% 
-	for event in site.events %}{% 
-	if event.dateEnd %}{% 
-	 assign expire_date = event.dateEnd | date: "%s" %}{% 
-	else %}{% 
-	 assign expire_date = event.dateStart | date: "%s" %}{% 
-	endif %}{% 
+TIMEZONE-ID:{{ site.timezone }}
+X-WR-TIMEZONE:{{ site.timezone }}
+REFRESH-INTERVAL;VALUE=DURATION:PT24H
+X-PUBLISHED-TTL:PT24H{%
+	assign current_date = site.time | date: "%s" %}{%
+	for event in site.events %}{%
+	if event.dateEnd %}{%
+	 assign expire_date = event.dateEnd | date: "%s" %}{%
+	else %}{%
+	 assign expire_date = event.dateStart | date: "%s" %}{%
+	endif %}{%
 	if expire_date < current_date %}{%
-    continue %}{% 
-  endif %}{% 
+    continue %}{%
+  endif %}{%
 	assign location = event.location | replace: ",", "\," %}
 BEGIN:VEVENT
 UID:{{ event.organizer | append: event.title | md5 }}-{{ event.dateStart | date: "%Y%m%d" }}@fyntech.dk
@@ -23,11 +26,11 @@ ORGANIZER;CN="{{ event.organizer }}":MAILTO:
 LOCATION:{{ location | replace: "<br>", "\n" }}
 SUMMARY:{{ event.title }}
 CLASS:PUBLIC
-DTSTART:{{ event.dateStart | toUTC | date: "%Y%m%dT%H%M%SZ" }}{% 
+DTSTART:{{ event.dateStart | toUTC | date: "%Y%m%dT%H%M%SZ" }}{%
 	if event.dateEnd %}
-DTEND:{{ event.dateEnd | toUTC | date: "%Y%m%dT%H%M%SZ" }}{% 
+DTEND:{{ event.dateEnd | toUTC | date: "%Y%m%dT%H%M%SZ" }}{%
 	endif %}
 DTSTAMP:{{ event.dateStart | date: "%Y%m%d" }}T170000Z
-END:VEVENT{% 
+END:VEVENT{%
 	endfor %}
 END:VCALENDAR
