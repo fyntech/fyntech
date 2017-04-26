@@ -1,3 +1,11 @@
+GIT
+  remote: git@github.com:fyntech/fyntech_feed.git
+  revision: 8bd295db442da8fbe49c8e3ad4003d531e2383f4
+  tag: v0.1.0
+  specs:
+    fyntech_feed (0.1.0)
+      jekyll (~> 3.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -23,8 +31,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-feed (0.9.2)
-      jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -56,8 +62,8 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport (~> 4.2)
+  fyntech_feed!
   jekyll (~> 3.4)
-  jekyll-feed (~> 0.6)
   liquid-md5
 
 RUBY VERSION
