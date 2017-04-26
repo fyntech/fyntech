@@ -12,15 +12,18 @@ layout: base
 
     {% assign current_date = site.time | date: "%s" %}
     {% for event in site.events %}
-    
+
       {% comment %}
         Check if the event is newer than the current date.
       {% endcomment %}
       {% if event.dateEnd %}
-      {% assign expire_date = event.dateEnd | date: "%s" %}
+        {% assign expire_date = event.dateEnd | date: "%s" %}
+      {% elsif event.dateStart %}
+        {% assign expire_date = event.dateStart | date: "%s" %}
       {% else %}
-      {% assign expire_date = event.dateStart | date: "%s" %}
+        {% continue %}
       {% endif %}
+
       {% if expire_date < current_date %}
         {% continue %}
       {% endif %}
