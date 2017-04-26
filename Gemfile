@@ -16,7 +16,7 @@ gem "activesupport", "~> 4.2"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "fyntech_feed", :git => "git@github.com:fyntech/fyntech_feed.git", :tag => "v0.1.0"
+   gem "fyntech_feed", :git => "https://github.com/fyntech/fyntech_feed.git", :tag => "v0.1.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
