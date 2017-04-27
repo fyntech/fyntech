@@ -11,7 +11,8 @@ layout: base
     </div>
 
     {% assign current_date = site.time | date: "%s" %}
-    {% for event in site.events %}
+    {% assign events = site.events | sort:"dateStart" %}
+    {% for event in events %}
 
       {% comment %}
         Check if the event is newer than the current date.
