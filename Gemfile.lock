@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/fyntech/fyntech_feed.git
-  revision: 647498d98c90ae1417302a1234e781cd8c346ddc
-  tag: v0.1.1
+  revision: bb87f6aef8062506dba6da5a350e515620d563a7
+  tag: v0.1.2
   specs:
-    fyntech_feed (0.1.1)
+    fyntech_feed (0.1.2)
       jekyll (~> 3.3)
 
 GEM
