@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/smooth-scroll.min.js' | relative_url }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
@@ -13,5 +15,8 @@
         {{ content }}
       </section>
     </div>
+    <script>
+	    smoothScroll.init();
+    </script>
   </body>
 </html>
