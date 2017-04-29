@@ -29,7 +29,24 @@ layout: base
         {% continue %}
       {% endif %}
 
-      <div vocab="http://schema.org/" class="event {% if event.category %}category category-{{event.category}}{% endif %}" typeof="Event">
+      {% comment %}
+        Generate event id
+      {% endcomment %}
+      {% if event.dateStart && event.organizer && event.title %}
+        {% capture eventId %}
+          {{ event.dateStart | date: "%-d-%m-%Y" }}_
+          {{ event.organizer | downcase}}_
+          {{ event.title | downcase | replace: " ", "-" }}
+        {% endcapture %}
+
+        {% assign eventId = eventId | replace_regex: "/[^a-zA-Z0-9]/g", "" %}
+        {% assign eventId = eventId | replace_regex: "[(|)|/|&|']", "-" %}
+        {% assign eventId = eventId | strip_newlines | remove: " " %}
+      {% else %}
+          {% assign eventId = "" %}
+      {% endif %}
+
+      <div vocab="http://schema.org/" id="{{ eventId }}" class="event {% if event.category %}category category-{{event.category}}{% endif %}" typeof="Event">
         <section class="">
           {% if event.dateStart %}
             <time class="event-date" property="startDate" content="{{ event.dateStart }}" datetime="{{ event.dateStart }}">{{ event.dateStart | date: "%-d %b %Y &bull; %H:%M"}}
