@@ -5,6 +5,10 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:http://www.fyntech.dk/
 METHOD:PUBLISH
+NAME:{{ site.title }}
+X-WR-CALNAME:{{ site.title }}
+DESCRIPTION:{{ site.description }}
+X-WR-CALDESC:{{ site.description }}
 TIMEZONE-ID:{{ site.timezone }}
 X-WR-TIMEZONE:{{ site.timezone }}
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
@@ -25,6 +29,7 @@ UID:{{ event.organizer | append: event.title | md5 }}-{{ event.dateStart | date:
 ORGANIZER;CN="{{ event.organizer }}":MAILTO:
 LOCATION:{{ location | replace: "<br>", "\n" }}
 SUMMARY:{{ event.title }}
+DESCRIPTION:{{ event.excerpt | replace: "<br />", "\\n" | strip_html | strip_newlines }}
 CLASS:PUBLIC
 DTSTART:{{ event.dateStart | toUTC | date: "%Y%m%dT%H%M%SZ" }}{%
 	if event.dateEnd %}
