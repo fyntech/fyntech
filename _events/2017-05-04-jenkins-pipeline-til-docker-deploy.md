@@ -1,7 +1,7 @@
 ---
 title: "Jenkins Pipeline til Docker deploy"
 dateStart: 2017-05-04 19:00:00 Europe/Copenhagen
-location: "TV 2 Danmark<br>Rugaardsvej 25, 5100 Odense C., Odense"
+location: "TV 2 Danmark<br>Rugårdsvej 25, 5100 Odense C"
 link: "https://www.meetup.com/FLUG-Fyns-Linux-User-Group/events/239406998/"
 organizer: "FLUG"
 category: "flug"
