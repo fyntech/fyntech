@@ -5,6 +5,10 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:http://www.fyntech.dk/
 METHOD:PUBLISH
+NAME:{{ site.title }}
+X-WR-CALNAME:{{ site.title }}
+DESCRIPTION:{{ site.description }}
+X-WR-CALDESC:{{ site.description }}
 TIMEZONE-ID:{{ site.timezone }}
 X-WR-TIMEZONE:{{ site.timezone }}
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
