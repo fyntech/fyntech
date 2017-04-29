@@ -31,9 +31,9 @@ LOCATION:{{ location | replace: "<br>", "\n" }}
 SUMMARY:{{ event.title }}
 DESCRIPTION:{{ event.excerpt | replace: "<br />", "\\n" | strip_html | strip_newlines }}
 CLASS:PUBLIC
-DTSTART:{{ event.dateStart | toUTC | date: "%Y%m%dT%H%M%SZ" }}{%
+DTSTART:{{ event.dateStart | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}{%
 	if event.dateEnd %}
-DTEND:{{ event.dateEnd | toUTC | date: "%Y%m%dT%H%M%SZ" }}{%
+DTEND:{{ event.dateEnd | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}{%
 	endif %}
 DTSTAMP:{{ event.dateStart | date: "%Y%m%d" }}T170000Z
 END:VEVENT{%
