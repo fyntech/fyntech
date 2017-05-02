@@ -2,7 +2,7 @@
 title: "Concourse CI (CI/CD) w/workshop"
 dateStart: 2017-05-10 16:30:00 Europe/Copenhagen
 dateEnd: 2017-05-10 20:30:00 Europe/Copenhagen
-location: "To be announced"
+location: "Erhvervsakademiet Lillebælt<br>Seebladsgade 1, 5000 Odense C, building B, floor 1, room 9"
 link: "https://www.meetup.com/Code-U-Odense/events/238920957/"
 organizer: "CODE U Odense"
 category: "code-u-odense"
