@@ -29,7 +29,7 @@ UID:{{ event.organizer | append: event.title | md5 }}-{{ event.dateStart | date:
 ORGANIZER;CN="{{ event.organizer }}":MAILTO:
 LOCATION:{{ location | replace: "<br>", "\n" }}
 SUMMARY:{{ event.title }}
-DESCRIPTION:{{ event.excerpt | replace: "<br />", "\\n" | strip_html | strip_newlines }}
+{{ event.excerpt | prepend: "DESCRIPTION:" | replace: "<br />", "\\n" | strip_html | strip_newlines | string_split }}
 CLASS:PUBLIC
 DTSTART:{{ event.dateStart | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}{%
 	if event.dateEnd %}
