@@ -1,12 +1,14 @@
 module Jekyll
   module IcsFilter
     def string_split(input)
-      splitArray = input.chars.each_slice(75).map(&:join)
       output = ""
+      prepend = " "
+      length = 75
+      splitArray = input.chars.each_slice(length - prepend.length).map(&:join)
       splitArray.each_with_index do |string, index|
       	output += string
       	if index != splitArray.size - 1
-		  output += "\n "
+		  output += "\n" + prepend
 		end
       end
       return output
