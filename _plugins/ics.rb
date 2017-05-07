@@ -1,6 +1,6 @@
 module Jekyll
   module IcsFilter
-    def string_split(input)
+    def split_string(input)
       output = ""
       prepend = " "
       length = 75

@@ -7,8 +7,8 @@ PRODID:http://www.fyntech.dk/
 METHOD:PUBLISH
 NAME:{{ site.title }}
 X-WR-CALNAME:{{ site.title }}
-DESCRIPTION:{{ site.description }}
-X-WR-CALDESC:{{ site.description }}
+{{ site.description | prepend: "DESCRIPTION:" | split_string }}
+{{ site.description | prepend: "X-WR-CALDESC:" | split_string }}
 TIMEZONE-ID:{{ site.timezone }}
 X-WR-TIMEZONE:{{ site.timezone }}
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
@@ -23,19 +23,20 @@ X-PUBLISHED-TTL:PT24H{%
 	if expire_date < current_date %}{%
     continue %}{%
   endif %}{%
-	assign location = event.location | replace: ",", "\," %}
+	assign location = event.location | replace: ",", "\," %}{%
+  assign link = event.link | prepend: "\n\nSign up / more info: " %}
 BEGIN:VEVENT
 UID:{{ event.organizer | append: event.title | md5 }}-{{ event.dateStart | date: "%Y%m%d" }}@fyntech.dk
 ORGANIZER;CN="{{ event.organizer }}":MAILTO:
-LOCATION:{{ location | replace: "<br>", "\n" }}
+{{ location | prepend: "LOCATION:" | replace: "<br>", "\n" | split_string }}
 SUMMARY:{{ event.title }}
-{{ event.excerpt | prepend: "DESCRIPTION:" | replace: "<br />", "\\n" | strip_html | strip_newlines | string_split }}
+{{ event.excerpt | prepend: "DESCRIPTION:" | append: link | replace: "<br />", "\\n" | strip_html | strip_newlines | split_string }}
 CLASS:PUBLIC
 DTSTART:{{ event.dateStart | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}{%
 	if event.dateEnd %}
 DTEND:{{ event.dateEnd | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}{%
 	endif %}
-DTSTAMP:{{ event.dateStart | date: "%Y%m%d" }}T170000Z
+DTSTAMP:{{ event.dateStart | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}
 LAST-MODIFIED:{{ site.time | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}
 END:VEVENT{%
 	endfor %}
