@@ -24,11 +24,24 @@
       color: #666;
       margin-top: 20px;
 
-      .ics-link, .ics-btn {
+      .ics-link-container{
         border: 1px solid #CCC;
+        border-radius: 5px;
+        display: inline-block;
+
+        &::before {
+          content: "📆";
+          padding: 5px 0 5px 5px;
+          position: absolute;
+          pointer-events: none;
+        }
+      }
+
+      .ics-link, .ics-btn {
         padding: 5px;
         height: 17px;
         vertical-align: middle;
+        border: none;
       }
 
       .ics-link{
@@ -36,15 +49,21 @@
         font-size: 1.4rem;
         width: 200px;
         outline: none;
+        padding-left: 25px;
       }
 
       .ics-btn {
         display: inline-block;
         box-sizing: content-box;
-        border-left: none;
+        border-left: 1px solid #CCC;
         border-radius: 0 5px 5px 0;
         background: linear-gradient(#fcfcfc,#eee);
         color: #333;
+
+        img {
+          width: 14px;
+          padding: 0 2px;
+        }
 
         &:hover {
           cursor: pointer;
