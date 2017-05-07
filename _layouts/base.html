@@ -6,7 +6,6 @@
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="{{ '/assets/js/smooth-scroll.min.js' | relative_url }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
@@ -15,8 +14,29 @@
         {{ content }}
       </section>
     </div>
+    <script src="{{ '/assets/js/smooth-scroll.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/clipboard.min.js' | relative_url }}"></script>
     <script>
 	    smoothScroll.init();
+      var icsLink = document.querySelector('.ics-link')
+      var icsBtn  = document.querySelector('.ics-btn')
+      var icsBtnCB = new Clipboard(icsBtn);
+      icsBtnCB.on('success', function(e) {
+        e.clearSelection();
+        showTooltip(e.trigger, 'Kopieret!');
+      });
+      function showTooltip(elem, msg) {
+        elem.setAttribute('class', 'ics-btn tooltipped tooltipped-s');
+        elem.setAttribute('aria-label', msg);
+        icsLink.select()
+      }
+      icsBtn.addEventListener('mouseleave', function(e) {
+        e.currentTarget.setAttribute('class', 'ics-btn');
+        e.currentTarget.removeAttribute('aria-label');
+      });
+      icsLink.addEventListener('click', function(e) {
+        e.currentTarget.select();
+      });
     </script>
   </body>
 </html>

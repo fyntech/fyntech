@@ -8,6 +8,9 @@ layout: base
       <div class="events-description">
         En samling af spændende og interessante Tech relaterede events på Fyn.
       </div>
+      <div class="events-ics-info">
+        Hey! 👋 du kan tilføje vores ICS feed til din kalender, så skal du bare tjekke din kalender engang imellem, så sørger vi for at holde feedet opdateret. 📆<br><br><input class="ics-link" type="text" readonly value="{{ site.url | append: '/events.ics' }}"><a class="ics-btn" data-clipboard-target=".ics-link">Kopier link</a>
+      </div>
     </div>
 
     {% assign current_date = site.time | date: "%s" %}

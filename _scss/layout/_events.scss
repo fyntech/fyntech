@@ -19,5 +19,38 @@
       font-size: 1.6rem;
       line-height: 2rem;
     }
+
+    .events-ics-info {
+      color: #666;
+      margin-top: 20px;
+
+      .ics-link, .ics-btn {
+        border: 1px solid #CCC;
+        padding: 5px;
+        height: 17px;
+        vertical-align: middle;
+      }
+
+      .ics-link{
+        border-radius: 5px 0 0 5px;
+        font-size: 1.4rem;
+        width: 200px;
+        outline: none;
+      }
+
+      .ics-btn {
+        display: inline-block;
+        box-sizing: content-box;
+        border-left: none;
+        border-radius: 0 5px 5px 0;
+        background: linear-gradient(#fcfcfc,#eee);
+        color: #333;
+
+        &:hover {
+          cursor: pointer;
+          background: linear-gradient(#eee,#ddd);
+        }
+      }
+    }
   }
 }
