@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: ics
 ---
 BEGIN:VCALENDAR
 VERSION:2.0
@@ -7,8 +7,8 @@ PRODID:http://www.fyntech.dk/
 METHOD:PUBLISH
 NAME:{{ site.title }}
 X-WR-CALNAME:{{ site.title }}
-{{ site.description | prepend: "DESCRIPTION:" | split_string }}
-{{ site.description | prepend: "X-WR-CALDESC:" | split_string }}
+DESCRIPTION:{{ site.description }}
+X-WR-CALDESC:{{ site.description }}
 TIMEZONE-ID:{{ site.timezone }}
 X-WR-TIMEZONE:{{ site.timezone }}
 REFRESH-INTERVAL;VALUE=DURATION:PT24H
@@ -28,9 +28,9 @@ X-PUBLISHED-TTL:PT24H{%
 BEGIN:VEVENT
 UID:{{ event.organizer | append: event.title | md5 }}-{{ event.dateStart | date: "%Y%m%d" }}@fyntech.dk
 ORGANIZER;CN="{{ event.organizer }}":MAILTO:
-{{ location | prepend: "LOCATION:" | replace: "<br>", "\n" | split_string }}
+LOCATION:{{ location | replace: "<br>", "\n" }}
 SUMMARY:{{ event.title }}
-{{ event.excerpt | prepend: "DESCRIPTION:" | append: link | replace: "<br />", "\\n" | strip_html | strip_newlines | split_string }}
+DESCRIPTION:{{ event.excerpt | append: link | replace: "<br />", "\\n" | strip_html | strip_newlines }}
 CLASS:PUBLIC
 DTSTART:{{ event.dateStart | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}{%
 	if event.dateEnd %}
