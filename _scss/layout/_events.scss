@@ -27,7 +27,9 @@
       .ics-link-container{
         border: 1px solid #CCC;
         border-radius: 5px;
-        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        max-width: 220px;
 
         &::before {
           content: "📆";
@@ -47,7 +49,7 @@
       .ics-link{
         border-radius: 5px 0 0 5px;
         font-size: 1.4rem;
-        width: 200px;
+        width: 100%;
         outline: none;
         padding-left: 25px;
       }
