@@ -4,19 +4,22 @@ module Jekyll
       output = ""
       splitLines = input.lines
       splitLines.each do | line | 
-        splitArray = line.chars.each_slice(length - prepend.length).map(&:join)
-        if splitArray.length == 1
-          output += splitArray[0]
+        if line.bytesize <= length
+          output += line
         else
-          splitArray.each_with_index do |string, index|
-            output += string
-            if index != splitArray.size - 1
-              output += "\n" + prepend
-            end
+          output += line.byteslice(0,length)
+          i = length
+          while i < line.bytesize do
+            output += "\n" + prepend + line.byteslice(i, length - prepend.bytesize)
+            i = i + length - prepend.bytesize
           end
         end
       end
       return output
+    end
+
+    def convert_to_crlf(input)
+      input.gsub /\n/, "\r\n"
     end
   end
 end
