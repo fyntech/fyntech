@@ -57,7 +57,13 @@ layout: base
           {% if event.dateStart %}
             <time class="event-date" property="startDate" content="{{ event.dateStart }}" datetime="{{ event.dateStart }}">{{ event.dateStart | date: "%-d %b %Y &bull; %H:%M"}}
             {% if event.dateEnd %}
-             - {{ event.dateEnd | date: "%H:%M" }}
+              {% capture startDay %}{{ event.dateStart | date: '%-d %b %Y' }}{% endcapture %}
+              {% capture endDay %}{{ event.dateEnd | date: '%-d %b %Y' }}{% endcapture %}
+              {% if startDay != endDay %}
+                - {{ event.dateEnd | date: "%-d %b %Y &bull; %H:%M" }}
+              {% else %}
+                - {{ event.dateEnd | date: "%H:%M" }}
+              {% endif %}
             {% endif %}
             </time>
           {% endif %}
