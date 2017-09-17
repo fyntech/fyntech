@@ -1,7 +1,7 @@
 ---
 title: "EventSourcing: Down the rabbit hole"
 dateStart: 2017-09-28 19:00:00 Europe/Copenhagen
-location: "TBA"
+location: "Forskerparken (AIR SUPPORT)<br>Forskerparken 10, 5230, Odense"
 link: "https://www.meetup.com/CODE-Odense/events/242707228/"
 organizer: "CODE Odense"
 category: "codeodense"
