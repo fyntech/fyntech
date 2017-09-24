@@ -68,7 +68,12 @@ layout: base
             </time>
           {% endif %}
           {% if event.title %}
-            <h2 class="event-title" property="name">{{ event.title }}</h2>
+            <h2 class="event-title" property="name">
+            {% if event.category == "cancelled" %}
+            Aflyst: 
+            {% endif %}
+            {{ event.title }}
+            </h2>
           {% endif %}
           {{ event.excerpt }}
         </section>

@@ -29,7 +29,7 @@ BEGIN:VEVENT
 UID:{{ event.organizer | append: event.title | md5 }}-{{ event.dateStart | date: "%Y%m%d" }}@fyntech.dk
 ORGANIZER;CN="{{ event.organizer }}":MAILTO:
 LOCATION:{{ location | replace: "<br>", "\n" }}
-SUMMARY:{{ event.title }}
+SUMMARY:{% if event.category == "cancelled" %}Aflyst: {% endif %}{{ event.title }}
 DESCRIPTION:{{ event.excerpt | append: link | replace: "<br />", "\\n" | strip_html | strip_newlines }}
 CLASS:PUBLIC
 DTSTART:{{ event.dateStart | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}{%
