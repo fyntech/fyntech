@@ -1,3 +1,4 @@
+---
 title: EAL Tech events - computer club
 dateStart: 2017-09-21 19:00 Europe/Copenhagen
 dateEnd: 2017-09-21 19:00 Europe/Copenhagen
