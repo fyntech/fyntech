@@ -7,7 +7,8 @@ $categories:(
     ida: #009FE3,
     prosa: #C52C1A,
     vuc: #00a357,
-    atlassian-users-odense: #0052CC
+    atlassian-users-odense: #0052CC,
+    azure: #f13a59
   );
 
 $combo-categories:(
@@ -20,7 +21,7 @@ $combo-categories:(
     &.category-#{$category} {
       .event-info{
         background: $color;
-      
+
         @include category-btn($color);
       }
       .event-date{
