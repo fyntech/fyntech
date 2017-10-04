@@ -1,7 +1,7 @@
 ---
 title: EAL Tech events - computer club
-dateStart: 2017-09-21 19:00 Europe/Copenhagen
-dateEnd: 2017-09-21 19:00 Europe/Copenhagen
+dateStart: 2017-09-21 19:00:00 Europe/Copenhagen
+dateEnd: 2017-09-21 19:00:00 Europe/Copenhagen
 location: "B2.03  Erhvervsakademi Lillebælt campus<br>Seebladsgade 1, Odense"
 link: https://www.meetup.com/EAL-tech-events/events/243198568/
 organizer: "EAL"

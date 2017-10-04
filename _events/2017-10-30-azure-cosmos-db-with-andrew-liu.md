@@ -1,7 +1,7 @@
 ---
 title: Azure Cosmos DB with Andrew Liu
-dateStart: 2017-10-30 18:00 Europe/Copenhagen
-dateEnd: 2017-10-30 21:00 Europe/Copenhagen
+dateStart: 2017-10-30 18:00:00 Europe/Copenhagen
+dateEnd: 2017-10-30 21:00:00 Europe/Copenhagen
 location: "TBA"
 link: https://www.meetup.com/Azure-Usergroup-Denmark-Odense/events/243269796
 organizer: "Azure Usergroup Denmark"

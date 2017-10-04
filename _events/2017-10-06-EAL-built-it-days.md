@@ -1,7 +1,7 @@
 ---
 title: EAL Tech events - Built IT days
-dateStart: 2017-10-06 18:00 Europe/Copenhagen
-dateEnd: 2017-10-08 15:00 Europe/Copenhagen
+dateStart: 2017-10-06 18:00:00 Europe/Copenhagen
+dateEnd: 2017-10-08 15:00:00 Europe/Copenhagen
 location: "B2.03 Erhvervsakademi Lillebælt campus<br>Seebladsgade 1, Odense"
 link: https://www.meetup.com/EAL-tech-events/events/243198724/
 organizer: "EAL"
