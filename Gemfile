@@ -13,10 +13,12 @@ gem "jekyll", "~> 3.4"
 #gem "minima", "~> 2.0"
 gem "liquid-md5"
 gem "activesupport", "~> 4.2"
+gem "meetup_client"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "fyntech_feed", :git => "https://github.com/fyntech/fyntech_feed.git", :tag => "v0.1.2"
+   gem 'octopress-debugger'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
