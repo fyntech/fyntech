@@ -34,5 +34,8 @@ defaults:
 gems:
   - fyntech_feed
   - liquid-md5
+  - octopress-debugger
 
 exclude: ["vendor", "Gemfile", "Gemfile.lock", "README.md"]
+
+meetup_groups: ['CODE-Odense','Atlassian-Users-Odense','EAL-tech-events','Code-U-Odense','DevOps-Odense','Odense-Hacking-Group','Azure-Usergroup-Denmark-Odense']

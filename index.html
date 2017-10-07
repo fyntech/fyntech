@@ -16,6 +16,8 @@ layout: base
       </div>
     </div>
 
+    
+
     {% assign current_date = site.time | date: "%s" %}
     {% assign events = site.events | sort:"dateStart" %}
     {% for event in events %}
