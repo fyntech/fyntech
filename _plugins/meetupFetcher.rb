@@ -20,7 +20,8 @@ module MeetupFetcher
 
 		@@meetup_groups.each do |organizer|
 			events = meetup_api.events({ group_urlname: organizer })
-
+			next if !events.has_key?('results')
+				
 			events['results'].each do |event|
 				doc = Jekyll::Document.new('', :site => site, :collection => collection)
 				doc.data['title'] = event['name']
