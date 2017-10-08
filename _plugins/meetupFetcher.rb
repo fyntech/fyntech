@@ -13,7 +13,7 @@ module MeetupFetcher
   		collection = @site.collections["events"]
 
 		MeetupClient.configure do |config|
-		  config.api_key = ENV['MEETUP_API_KEY']
+		  config.api_key = ENV['MEETUP_API_KEY'] || File.read("#{@site.source}/meetup_api_key")
 		end
 
 		meetup_api = MeetupApi.new

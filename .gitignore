@@ -4,6 +4,7 @@ _site
 bower_components
 deploy_key
 deploy_key.pub
+meetup_api_key
 
 .gem
 .bundle
