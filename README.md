@@ -1,5 +1,6 @@
 # fyntech.github.io
 [![Build Status](https://travis-ci.org/fyntech/fyntech.svg?branch=master)](https://travis-ci.org/fyntech/fyntech)
+
 This is the GitHub pages site for http://fyntech.dk which we aim to update frequently, with new and exciting tech events. A number of events from meetup.com groups are being automatically imported every day. If you want to add your meetup group, please get in touch with one of the maintainers.
 This is a collaboration between members of [PROSA](http://prosa.dk) and the tech enthusiasts on Fyn, Denmark.  
 
