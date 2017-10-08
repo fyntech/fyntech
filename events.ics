@@ -27,8 +27,8 @@ X-PUBLISHED-TTL:PT24H{%
   assign link = event.link | prepend: "\n\nSign up / more info: " %}
 BEGIN:VEVENT
 UID:{{ event.organizer | append: event.title | md5 }}-{{ event.dateStart | date: "%Y%m%d" }}@fyntech.dk
-ORGANIZER;CN="{{ event.organizer }}":MAILTO:
-LOCATION:{{ location | replace: "<br>", "\n" }}
+ORGANIZER;CN="{{ event.organizer }}":MAILTO:{% if location != "" and location != "TBD" and location != "TBA" %}
+LOCATION:{{ location | replace: "<br>", "\n" }}{% endif %}
 SUMMARY:{% if event.category == "cancelled" %}Aflyst: {% endif %}{{ event.title }}
 DESCRIPTION:{{ event.excerpt | append: link | replace: "<br />", "\\n" | strip_html | strip_newlines }}
 CLASS:PUBLIC
