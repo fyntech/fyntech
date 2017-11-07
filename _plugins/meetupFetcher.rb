@@ -3,7 +3,7 @@ require 'meetup_client'
 module MeetupFetcher
  class Generator < Jekyll::Generator
   	def convertDate(date, offset)
-  		dateWithOffset = date #+ offset
+  		dateWithOffset = date + offset
   		convertedDate = "#{DateTime.strptime(dateWithOffset.to_s,'%Q')} #{@@timezone}"
   		return convertedDate
   	end
