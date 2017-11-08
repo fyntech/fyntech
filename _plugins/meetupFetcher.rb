@@ -14,14 +14,26 @@ module MeetupFetcher
 
 		MeetupClient.configure do |config|
 		  keyPath = "#{@site.source}/meetup_api_key"
-		  config.api_key = ENV['MEETUP_API_KEY'] || File.file?(keyPath) && File.read(keyPath)
+		  config.api_key = ENV['MEETUP_API_KEY'] || File.file?(keyPath) && File.read(keyPath) || return
 		end
 
 		meetup_api = MeetupApi.new
 
 		@@meetup_groups.each do |organizer|
-			events = meetup_api.events({ group_urlname: organizer })
-			next if !events.has_key?('results')
+			begin
+				retries ||= 5
+				events = meetup_api.events({ group_urlname: organizer })
+				next if !events.has_key?('results')
+			rescue Exception => e
+				Jekyll.logger.warn("Warning:", "The MeetupApi failed for \"#{organizer}\" retrying #{retries} times before giving up… Sleeping for 5 seconds")
+				if (retries -= 1) > 0
+					sleep(5)
+					retry
+				else
+					Jekyll.logger.error("Error:", "No more retries left, we're going down 💥")
+					raise
+				end
+			end
 				
 			events['results'].each do |event|
 				doc = Jekyll::Document.new('', :site => site, :collection => collection)
