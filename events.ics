@@ -3,6 +3,7 @@ layout: ics
 ---
 BEGIN:VCALENDAR
 VERSION:2.0
+CALSCALE:GREGORIAN
 PRODID:http://www.fyntech.dk/
 METHOD:PUBLISH
 NAME:{{ site.title }}
@@ -36,8 +37,9 @@ DTSTART:{{ event.dateStart | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}{%
 	if event.dateEnd %}
 DTEND:{{ event.dateEnd | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}{%
 	endif %}
-DTSTAMP:{{ event.dateStart | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}
+DTSTAMP:{{ site.time | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}
 LAST-MODIFIED:{{ site.time | date_to_utc | date: "%Y%m%dT%H%M%SZ" }}
+SEQUENCE:{{ site.time | generate_sequence }}
 END:VEVENT{%
 	endfor %}
 END:VCALENDAR

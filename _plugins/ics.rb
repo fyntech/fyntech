@@ -33,6 +33,11 @@ module Jekyll
     def convert_to_crlf(input)
       input.gsub /\n/, "\r\n"
     end
+
+    def generate_sequence(time)
+      sequence = time.to_i
+      return sequence
+    end
   end
 end
 
