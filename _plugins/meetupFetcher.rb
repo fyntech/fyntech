@@ -27,8 +27,8 @@ module MeetupFetcher
 				events = meetup_api.events({ group_urlname: organizer })
 				next if !events.has_key?('results')
 			rescue Exception => e
-				sleepTimeout = maxRetryTimeout - (maxRetryTimeout / initialRetries * retries)
 				if retries > 0
+					sleepTimeout = maxRetryTimeout - (maxRetryTimeout / initialRetries * retries)
 					Jekyll.logger.warn("Warning:", "The MeetupApi failed for \"#{organizer}\" retrying #{retries} times before giving up… Sleeping for #{sleepTimeout} seconds")
 					sleep(sleepTimeout)
 					retries -= 1
