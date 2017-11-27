@@ -2,14 +2,14 @@ require 'meetup_client'
 
 module MeetupFetcher
  class Generator < Jekyll::Generator
-  	def convertDate(date, offset)
-  		dateWithOffset = date + offset
-  		convertedDate = "#{DateTime.strptime(dateWithOffset.to_s,'%Q').strftime('%Y-%m-%d %H:%M:%S')} #{@@timezone}"
-  		return convertedDate
-  	end
+	def convertDate(date, offset)
+		dateWithOffset = date + offset
+		convertedDate = "#{DateTime.strptime(dateWithOffset.to_s,'%Q').strftime('%Y-%m-%d %H:%M:%S')} #{@@timezone}"
+		return convertedDate
+	end
 
-  	def getMeetUpGroupEvents(group)
-  		maxRetryTimeout = 50
+	def getMeetUpGroupEvents(group)
+		maxRetryTimeout = 50
 		initialRetries = 5
 		begin
 			retries ||= initialRetries
@@ -26,10 +26,10 @@ module MeetupFetcher
 				raise
 			end
 		end
-  	end
+	end
 
-  	def generateEventDocument(event)
-  		doc = Jekyll::Document.new('', :site => @site, :collection => @collection)
+	def generateEventDocument(event)
+		doc = Jekyll::Document.new('', :site => @site, :collection => @collection)
 		doc.data['title'] = event['name']
 		doc.data['dateStart'] = convertDate(event['time'],event['utc_offset'])
 		if event['duration']
@@ -43,11 +43,11 @@ module MeetupFetcher
 		doc.data['category'] = event['group']['name'].downcase.gsub(/\s+|[():]/, "")
 		doc.data['excerpt'] = event['description']
 		return doc
-  	end
+	end
 
-  	def generate(site)
-  		@site = site
-  		@collection = @site.collections["events"]
+	def generate(site)
+		@site = site
+		@collection = @site.collections["events"]
 
 		MeetupClient.configure do |config|
 		  keyPath = "#{@site.source}/meetup_api_key"
@@ -65,8 +65,8 @@ module MeetupFetcher
 				@collection.docs << doc
 			end
 		end
-  	end
-  	@@timezone = Jekyll.configuration({})['timezone']
-  	@@meetup_groups = Jekyll.configuration({})['meetup_groups']
+	end
+	@@timezone = Jekyll.configuration({})['timezone']
+	@@meetup_groups = Jekyll.configuration({})['meetup_groups']
   end
 end
