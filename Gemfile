@@ -14,6 +14,7 @@ gem "jekyll", "~> 3.4"
 gem "liquid-md5"
 gem "activesupport", "~> 4.2"
 gem "meetup_client"
+gem "byebug", "~> 10.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
