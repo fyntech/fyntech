@@ -31,7 +31,7 @@ defaults:
     values:
       layout: event
 
-gems:
+plugins:
   - fyntech_feed
   - liquid-md5
   - octopress-debugger
