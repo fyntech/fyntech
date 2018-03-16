@@ -36,4 +36,12 @@ Dependencies
 * [Jekyll](https://jekyllrb.com/)
 * [Meetup.com Api Key](www.meetup.com/meetup_api/key/) (can be omitted)(The key should be placed in plaintext in a file called "meetup_api_key" in the projects root directory)
 
-If the dependencies are met, it should be as easy as opening a terminal in the root folder and running `bundle exec jekyll serve`
+## Setup
+Install gems through Bundler  
+`bundle install`
+
+Build the site on the preview server  
+`bundle exec jekyll serve`
+
+_Windows does not include zoneinfo files, so bundle the tzinfo-data gem_  
+`gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]`
