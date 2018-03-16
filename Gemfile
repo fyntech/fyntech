@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 ruby '~> 2.4.0'
 
+gem 'activesupport'
 gem 'jekyll'
 gem 'liquid-md5'
-gem 'activesupport'
 gem 'meetup_client'
 
 # Jekyll plugins
