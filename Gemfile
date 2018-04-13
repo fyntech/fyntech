@@ -8,6 +8,6 @@ gem 'meetup_client'
 
 # Jekyll plugins
 group :jekyll_plugins do
-   gem "fyntech_feed", :git => "https://github.com/fyntech/fyntech_feed.git", :tag => "v0.1.2"
+   gem "fyntech_feed", :git => "https://github.com/fyntech/fyntech_feed.git", :tag => "v0.1.3"
    gem 'octopress-debugger'
 end
