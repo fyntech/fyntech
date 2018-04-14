@@ -27,7 +27,9 @@ for event in page_content.find_all(class_='article'):
   print(dateStart)
 
   # location
-  # arrangement-address
+  eventLocation = event.find(class_='arrangement-address').text
+  location = ' '.join(eventLocation.split())
+  print(location)
 
   # link
 
