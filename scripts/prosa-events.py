@@ -10,8 +10,11 @@ events = page_content.find_all(class_='article')
 for event in page_content.find_all(class_='article'):
   # title 
   eventTitle = event.find("span", itemprop="headline").text
-  # TODO: remove Odense prefix
-  print(eventTitle)
+  if eventTitle.startswith("Odense: "):
+    title = eventTitle[8:]
+  else:
+    title = eventTitle
+  print(title)
 
   # dateStart / Y-m-d H:i:s Europe/Copenhagen
   eventDate = event.find(class_='news-list-date')
