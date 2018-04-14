@@ -23,11 +23,12 @@ for event in page_content.find_all(class_='article'):
   # TODO: format month and date
   print(dateStart)
 
-  # Location
+  # location
   # arrangement-address
 
-  # Link
+  # link
 
-  # Description
-  # div.teaser-text div[itemprop="description"]
-  
+  # description
+  eventDescription = event.find("div", itemprop="description").text
+  description = eventDescription
+  print(description)
