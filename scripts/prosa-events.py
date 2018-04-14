@@ -32,6 +32,9 @@ for event in page_content.find_all(class_='article'):
   print(location)
 
   # link
+  eventLink = event.find('a', href=True)
+  link = ''.join(['https://www.prosa.dk/', eventLink['href']])
+  print(link)
 
   # description
   eventDescription = event.find("div", itemprop="description").text
