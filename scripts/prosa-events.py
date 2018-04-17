@@ -4,7 +4,7 @@ import requests
 import locale
 
 # Use danish month names
-locale.setlocale(locale.LC_ALL, 'da_DK')
+locale.setlocale(locale.LC_ALL, 'da')
 
 page_link ='https://www.prosa.dk/nc/arrangementer/?tx_news_pi1[overwriteDemand][locations][2]=Fyn'
 page_response = requests.get(page_link, timeout=20)
