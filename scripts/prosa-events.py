@@ -47,3 +47,9 @@ for event in page_content.find_all(class_='article'):
   eventDescription = event.find("div", itemprop="description").text
   description = eventDescription
   print(description)
+
+  # filename / date-title.md
+  filenameDate = date.strftime('%Y-%m-%d')
+  filenameTitle = title.replace(" ", "-")
+  filename = ''.join([filenameDate, '-', filenameTitle.lower(), '.md'])
+  print(filename)
