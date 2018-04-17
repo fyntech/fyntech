@@ -1,5 +1,11 @@
 from bs4 import BeautifulSoup
+from datetime import datetime
 import requests
+import locale
+
+# Use danish month names
+locale.setlocale(locale.LC_ALL, 'da_DK')
+
 page_link ='https://www.prosa.dk/nc/arrangementer/?tx_news_pi1[overwriteDemand][locations][2]=Fyn'
 page_response = requests.get(page_link, timeout=20)
 page_content = BeautifulSoup(page_response.content, "html.parser")
@@ -18,12 +24,13 @@ for event in page_content.find_all(class_='article'):
 
   # dateStart / Y-m-d H:i:s Europe/Copenhagen
   eventDate = event.find(class_='news-list-date')
-  eventDateDay = eventDate.find(class_='day')
-  eventDateMonth = eventDate.find(class_='month')
-  eventDateYear = eventDate.find(class_='year')
-  eventDateTime = eventDate.find(class_='eventTime')
-  dateStart = ''.join([eventDateYear.text, '-', eventDateMonth.text, '-', eventDateDay.text, ' ', eventDateTime.text, ' Europe/Copenhagen'])
-  # TODO: format month and date
+  eventDateDay = eventDate.find(class_='day').text.strip('.')
+  eventDateMonth = eventDate.find(class_='month').text
+  eventDateYear = eventDate.find(class_='year').text
+  eventDateTime = eventDate.find(class_='eventTime').text
+  date = ''.join([eventDateYear, ' ', eventDateMonth, ' ', eventDateDay, ' ', eventDateTime])
+  date = datetime.strptime(date, '%Y %B %d %H:%M')
+  dateStart = ' '.join([date.strftime('%Y-%m-%d %H:%M:%S'), 'Europe/Copenhagen'])
   print(dateStart)
 
   # location
