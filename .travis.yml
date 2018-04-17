@@ -1,5 +1,11 @@
 sudo: false
+dist: "trusty"
 language: ruby
+addons:
+  apt:
+    packages:
+      - "python3"
+      - "python3-pip"
 cache: bundler
 branches: { only: master }
 
@@ -8,12 +14,12 @@ rvm:
 python:
   - "3.6"
 
-install:
-  - pip install -r scripts/prosa-events-requirements.txt
+before_install:
+  - "pip3 install -r scripts/prosa-events-requirements.txt"
+  
 
 before_script:
-  - pip install -r scripts/prosa-events-requirements.txt
-  - python scripts/prosa-events.py
+  - python3 scripts/prosa-events.py
 
 script: 
   - bundle exec jekyll build
