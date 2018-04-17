@@ -12,6 +12,7 @@ install:
   - pip install -r scripts/prosa-events-requirements.txt
 
 before_script:
+  - pip install -r scripts/prosa-events-requirements.txt
   - python scripts/prosa-events.py
 
 script: 
