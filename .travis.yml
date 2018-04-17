@@ -19,6 +19,7 @@ install:
 
 before_script:
   - python3 scripts/prosa-events.py
+  - bundle install
 
 script: 
   - bundle exec jekyll build
