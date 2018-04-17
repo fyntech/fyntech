@@ -1,11 +1,28 @@
 sudo: false
+dist: "trusty"
 language: ruby
+addons:
+  apt:
+    packages:
+      - "python3"
+      - "python3-pip"
+      - "python-requests"
+      - "language-pack-da"
 cache: bundler
 branches: { only: master }
-rvm:
-  - ruby-2.4.3
 
-script: bundle exec jekyll build
+rvm:
+  - ruby-2.4.1
+
+install:
+  - pip3 install beautifulsoup4 --user
+
+before_script:
+  - python3 scripts/prosa-events.py
+  - bundle install
+
+script: 
+  - bundle exec jekyll build
 
 deploy:
   provider: pages
