@@ -6,11 +6,12 @@ branches: { only: master }
 rvm:
   - ruby-2.4.3
 python:
-  - '3.2'
+  - "3.6"
+
+install:
+  - pip install -r scripts/prosa-events-requirements.txt
 
 before_script:
-  - pip install beautifulsoup4
-  - pip install requests
   - python scripts/prosa-events.py
 
 script: 
