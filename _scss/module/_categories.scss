@@ -1,18 +1,18 @@
 $categories: (
-  cancelled: $color-cancled,
-  codeodense: $color-codeodense,
-  codeu-continuousdeliveryusersodense: $color-codeu,
-  ealtechevents: $color-eal,
-  flug-fynslinuxusergroup: $color-flug,
-  ida: $color-ida,
-  prosa: $color-prosa,
-  vuc: $color-vuc,
   atlassianusersodense: $color-atlassian,
   azureusergroupdenmarkodense: $color-azure,
+  cancelled: $color-canceled,
+  codeodense: $color-codeodense,
+  codeu-continuousdeliveryusersodense: $color-codeu,
   devops-odense: $color-devops,
-  odensehackinggroup: $color-odensehacking,
   dockerodense: $color-dockerodense,
-  gaming: $color-gaming
+  ealtechevents: $color-eal,
+  flug-fynslinuxusergroup: $color-flug,
+  gaming: $color-gaming,
+  ida: $color-ida,
+  odensehackinggroup: $color-odensehacking,
+  prosa: $color-prosa,
+  vuc: $color-vuc
 );
 
 $combo-categories: (
