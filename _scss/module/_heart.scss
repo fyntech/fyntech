@@ -1,0 +1,13 @@
+.heart {
+  animation: pulse 1.5s ease infinite;
+  fill: $color-heart;
+  position: relative;
+  top: 5px;
+  width: 50px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(.7); }
+  50% { transform: scale(1); }
+  100% { transform: scale(.7); }
+}
