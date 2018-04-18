@@ -1,47 +1,47 @@
-$categories:(
-    cancelled: #CCC,
-    codeodense: hsl(282, 72%, 38%),
-    codeu-continuousdeliveryusersodense: #559E33,
-    ealtechevents: #006E79,
-    flug-fynslinuxusergroup: #29ABE1,
-    ida: #009FE3,
-    prosa: #C52C1A,
-    vuc: #00a357,
-    atlassianusersodense: #0052CC,
-    azureusergroupdenmarkodense: #f13a59,
-    devops-odense: #371EAC,
-    odensehackinggroup: #333,
-    dockerodense: #0db7ed,
-    gaming: rgba(197, 143, 223, 0.733)
-  );
+$categories: (
+  cancelled: $color-cancled,
+  codeodense: $color-codeodense,
+  codeu-continuousdeliveryusersodense: $color-codeu,
+  ealtechevents: $color-eal,
+  flug-fynslinuxusergroup: $color-flug,
+  ida: $color-ida,
+  prosa: $color-prosa,
+  vuc: $color-vuc,
+  atlassianusersodense: $color-atlassian,
+  azureusergroupdenmarkodense: $color-azure,
+  devops-odense: $color-devops,
+  odensehackinggroup: $color-odensehacking,
+  dockerodense: $color-dockerodense,
+  gaming: $color-gaming
+);
 
-$combo-categories:(
-    eal-prosa: (map-get($categories, prosa), map-get($categories, eal))
-  );
-
+$combo-categories: (
+  eal-prosa: (map-get($categories, prosa), map-get($categories, eal))
+);
 
 .category {
   @each $category, $color in $categories {
     &.category-#{$category} {
-      .event-info{
-        background: $color;
-
+      .event-info {
         @include category-btn($color);
+        background: $color;
       }
-      .event-date{
+
+      .event-date {
         background: $color;
       }
     }
   }
+
   @each $category, $colors in $combo-categories {
     &.category-#{$category} {
-      .event-info{
-        background: linear-gradient(45deg, #{nth($colors, 1)} 0%,#{nth($colors, 1)} 49.9%,#{nth($colors, 2)} 50%,#{nth($colors, 2)} 100%);
-
+      .event-info {
         @include category-btn(nth($colors, 1));
+        background: linear-gradient(45deg, #{nth($colors, 1)} 0%, #{nth($colors, 1)} 49.9%, #{nth($colors, 2)} 50%, #{nth($colors, 2)} 100%);
       }
-      .event-date{
-        background: linear-gradient(45deg, #{nth($colors, 1)} 0%,#{nth($colors, 1)} 49.9%,#{nth($colors, 2)} 50%,#{nth($colors, 2)} 100%);;
+
+      .event-date {
+        background: linear-gradient(45deg, #{nth($colors, 1)} 0%, #{nth($colors, 1)} 49.9%, #{nth($colors, 2)} 50%, #{nth($colors, 2)} 100%);
       }
     }
   }
