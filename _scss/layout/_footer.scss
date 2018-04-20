@@ -1,23 +1,10 @@
 footer {
-  text-align: center;
   font-family: montserratlight;
   margin-top: 30px;
+  text-align: center;
 
-  img{
-    max-width: 168px;
+  img {
     margin-top: 5px;
-  }
-  .heart {
-    fill: #c52c1a;
-    position: relative;
-    top: 5px;
-    width: 50px;
-    animation: pulse 1.5s ease infinite,
-  }
-
-  @keyframes pulse {
-    0% { transform: scale(.7); }
-    50% { transform: scale(1); }
-    100% { transform: scale(.7); }
+    max-width: 168px;
   }
 }

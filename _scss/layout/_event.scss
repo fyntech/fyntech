@@ -1,39 +1,40 @@
 .event {
-  padding-left: 15px;
   padding-bottom: 30px;
+  padding-left: 15px;
 
   h2 {
     margin: 0;
   }
 
   section {
-    padding: 15px;
     box-sizing: border-box;
+    padding: 15px;
 
     &:first-of-type {
-      padding-top: 30px;
       padding-bottom: 30px;
+      padding-top: 30px;
+
       @media (max-width: $screen-phone) {
-        padding-left: 0px;
-        padding-bottom: 20px
+        padding-bottom: 20px;
+        padding-left: 0;
       }
 
       ul {
-        color: #666;
+        color: $color-text;
       }
 
       p {
-        margin-bottom: 0;
+        color: $color-text;
         font-size: 1.5rem;
         line-height: 2rem;
-        color: #666;
+        margin-bottom: 0;
 
         a {
-          color: #666;
+          color: $color-text;
           font-weight: bold;
 
           &:hover {
-            color: #333;
+            color: darken($color-text, 20%);
           }
         }
       }
@@ -41,52 +42,53 @@
   }
 
   .event-date {
-    font-size: 1.4rem;
-    color: #FFF;
-    display: inline-block;
-    padding: 5px 16px;
-    background: #CCC;
-    margin-left: -15px;
-    margin-bottom: 20px;
-    position: relative;
+    background: #ccc;
     border-radius: 14px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    padding: 5px 16px;
+    position: relative;
+
     @media (max-width: $screen-phone) {
-      margin-left: 0px;
+      margin-left: 0;
     }
 
-    &::after{
-      content: "";
-      width: 9px;
-      height: 9px;
-      background: #CCC;
+    &::after {
+      background: #ccc;
       border-radius: 50%;
+      content: '';
+      height: 9px;
+      left: -20px;
       position: absolute;
-      left: -20px;;
       top: 9px;
+      width: 9px;
     }
   }
 
   .event-title {
-    color: #333;
+    color: darken($color-text, 20%);
   }
 
   .event-url {
     margin-top: 10px;
   }
 
-  .event-organizer{
+  .event-organizer {
     font-family: montserratregular;
   }
 
   .event-info {
-    font-family: montserratlight;
     background-color: #999;
-    color: white;
     box-shadow: 0px 4px 3px -2px rgba(0,0,0,0.2);
+    color: #fff;
+    font-family: montserratlight;
   }
 
-  img{
-    max-width: 100%;
+  img {
     border-radius: 5px;
+    max-width: 100%;
   }
 }

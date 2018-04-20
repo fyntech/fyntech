@@ -1,4 +1,26 @@
-/* Size */
+// Colors
+$color-background: #fff;
+$color-text: #666;
+$color-border: #eee;
+$color-heart: #c52c1a;
+
+// Categories
+$color-atlassian: #0052cc;
+$color-azure: #f13a59;
+$color-canceled: #ccc;
+$color-codeodense: hsl(282, 72%, 38%);
+$color-codeu: #559e33;
+$color-devops: #371eac;
+$color-dockerodense: #0db7ed;
+$color-eal: #006e79;
+$color-flug: #29abe1;
+$color-gaming: rgba(197, 143, 223, .733);
+$color-ida: #009fe3;
+$color-odensehacking: #333;
+$color-prosa: #c52c1a;
+$color-vuc: #00a357;
+
+// Size
 $screen-xs: 480px !default;
 $screen-xs-min: $screen-xs !default;
 $screen-phone: $screen-xs-min !default;

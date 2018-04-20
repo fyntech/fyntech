@@ -1,17 +1,18 @@
 ---
 ---
 // Base
-@import "base/variables";
-@import "base/fonts";
-@import "base/base";
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/base';
 
 //Layout
-@import "layout/event";
-@import "layout/events";
-@import "layout/footer";
+@import 'layout/event';
+@import 'layout/events';
+@import 'layout/footer';
 
 // Modules
-@import "module/buttons";
-@import "module/categories";
-@import "module/octo";
-@import "module/tooltipped";
+@import 'module/buttons';
+@import 'module/categories';
+@import 'module/octo';
+@import 'module/tooltipped';
+@import 'module/heart';
