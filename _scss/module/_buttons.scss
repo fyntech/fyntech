@@ -1,45 +1,41 @@
-.btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  user-select: none;
-  background-image: none;
-  text-decoration: none;
-  color: #333;
-  background-color: #fff;
-  border-bottom: 2px solid rgba(0,0,0,.5);
+@mixin category-btn($color) {
+  .btn {
+    border-bottom: 2px solid darken($color, 10%);
 
-  &:focus {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #8c8c8c;
-  }
-  &:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
+    &:hover {
+      background: lighten($color, 50%);;
+    }
+
+    &:active {
+      border-bottom: 2px solid $color;
+      bottom: -2px;
+      position: relative;
+    }
   }
 }
 
-@mixin category-btn($color){
-  .btn{
-    border-bottom: 2px solid darken($color, 10%);
+.btn {
+  background-color: #fff;
+  background-image: none;
+  border-bottom: 2px solid rgba(0,0,0,.5);
+  color: $color-text;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 
-    &:hover{
-      background: lighten($color, 50%);;
-    }
-    &:active{
-      border-bottom: 2px solid $color;
-      position: relative;
-      bottom: -2px;
-    }
+  &:focus,
+  &:hover {
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+    color: $color-text;
   }
 }
