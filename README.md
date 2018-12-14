@@ -45,3 +45,7 @@ Build the site on the preview server
 
 _Windows does not include zoneinfo files, so bundle the tzinfo-data gem_  
 `gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]`
+
+## …or just use Docker-compose
+1. Install Docker
+2. open a terminal in this directory and run `docker-compose up`
