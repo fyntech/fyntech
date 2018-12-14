@@ -18,7 +18,7 @@ $color-codeodense: hsl(282, 72%, 38%);
 $color-codeu: #559e33;
 $color-devops: #371eac;
 $color-dockerodense: #0db7ed;
-$color-eal: #006e79;
+$color-ucl: #006e79;
 $color-flug: #29abe1;
 $color-gaming: rgba(197, 143, 223, .733);
 $color-ida: #009fe3;
@@ -40,12 +40,12 @@ $categories: (
   codeu-continuousdeliveryusersodense: $color-codeu,
   devops-odense: $color-devops,
   dockerodense: $color-dockerodense,
-  ealtechevents: $color-eal,
+  ucltechevents: $color-ucl,
   flug-fynslinuxusergroup: $color-flug,
   gaming: $color-gaming,
   ida: $color-ida,
   odensehackinggroup: $color-odensehacking,
   prosa: $color-prosa,
   vuc: $color-vuc,
-  eal-prosa: ($color-eal, $color-prosa)
+  ucl-prosa: ($color-ucl, $color-prosa)
 );
