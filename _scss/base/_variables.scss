@@ -25,6 +25,7 @@ $color-ida: #009fe3;
 $color-odensehacking: #333;
 $color-prosa: #c52c1a;
 $color-vuc: #00a357;
+$color-cloudclub: #188CC2;
 
 // Size
 $screen-xs: 48em !default;
@@ -47,5 +48,6 @@ $categories: (
   odensehackinggroup: $color-odensehacking,
   prosa: $color-prosa,
   vuc: $color-vuc,
-  ucl-prosa: ($color-ucl, $color-prosa)
+  ucl-prosa: ($color-ucl, $color-prosa),
+  cloudclub: $color-cloudclub
 );
