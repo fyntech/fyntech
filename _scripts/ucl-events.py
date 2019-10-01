@@ -40,5 +40,5 @@ for event in page_content.find_all(class_='eventCard'):
         f.write('location: "' + eventLocation + '"\n')
         f.write('link: "' + eventLink + '"\n')
         f.write('organizer: "UCL tech events"\n')
-        f.write('category: "ucl"\n')
+        f.write('category: "ucltechevents"\n')
         f.write('---\n')
