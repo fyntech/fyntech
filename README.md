@@ -5,10 +5,6 @@ This is the GitHub pages site for http://fyntech.dk which we aim to update frequ
 This is a collaboration between members of [PROSA](http://prosa.dk) and the tech enthusiasts on Fyn, Denmark.  
 
 ## Adding an Event
-There are currently two ways to create events on the site:
-1. If your group is on [MeetUp](http://meetup.com), you can add your group to the array `meetup_groups` in the `_config.yml` file, we fetch MeetUp events once every 24 hours.
-2. Generate an event file as described below.
-
 To generate a new event, create a new file in the _events directory. 
 Name the event file with the date and then the event name, format: y-m-d-title.md
 
@@ -29,6 +25,10 @@ category: "prosa"
 ---
 Short event description
 ```
+
+### Meetup.com deprecated
+Unfortunately we can't no longer get events directly from meetup.com.
+We are trying to find a solution to this.
 
 ## Building the project locally
 Dependencies
