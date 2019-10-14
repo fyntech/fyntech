@@ -9,7 +9,7 @@ from datetime import datetime
 locale.setlocale(locale.LC_ALL, 'da_DK.UTF-8')
 
 def getEvent(name):
-    page_link = f'https://www.meetup.com/{name}/events/'
+    page_link = 'https://www.meetup.com/{}/events/'.format(name)
     page_response = requests.get(page_link, timeout=20)
     page_content = BeautifulSoup(page_response.content, 'html.parser')
 
