@@ -19,7 +19,7 @@ install:
 
 before_script:
   - python3 _scripts/prosa-events.py
-  - python3 _scripts/ucltech-events.py
+  - python3 _scripts/meetup-events.py
   - bundle install
 
 script: 
