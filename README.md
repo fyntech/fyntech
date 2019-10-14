@@ -26,9 +26,8 @@ category: "prosa"
 Short event description
 ```
 
-### Meetup.com deprecated
-Unfortunately we can't no longer get events directly from meetup.com.
-We are trying to find a solution to this.
+### Meetup.com
+If you want to add a new meetup group to the list, add the meetup group name from meetup group url in `_scripts/meetup-events.py` and create a PR.
 
 ## Building the project locally
 Dependencies
