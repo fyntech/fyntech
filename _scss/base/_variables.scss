@@ -26,6 +26,9 @@ $color-odensehacking: #333;
 $color-prosa: #c52c1a;
 $color-vuc: #00a357;
 $color-cloudclub: #188CC2;
+$color-wordpress: $color-category;
+$color-technology-denmark: $color-category;
+$color-umbraco: #3544B1;
 
 // Size
 $screen-xs: 48em !default;
@@ -49,5 +52,8 @@ $categories: (
   prosa: $color-prosa,
   vuc: $color-vuc,
   ucl-prosa: ($color-ucl, $color-prosa),
-  cloudclub: $color-cloudclub
+  cloudclub: $color-cloudclub,
+  wordpress-odense: $color-wordpress,
+  technology-denmark: $color-technology-denmark,
+  umbraco: $color-umbraco,
 );

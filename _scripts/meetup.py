@@ -8,7 +8,8 @@ from datetime import datetime
 # Use danish month names
 locale.setlocale(locale.LC_ALL, 'da_DK.UTF-8')
 
-def getEvent(name):
+def getEvent(name, organizer, category):
+
     page_link = 'https://www.meetup.com/{}/events/'.format(name)
     page_response = requests.get(page_link, timeout=20)
     page_content = BeautifulSoup(page_response.content, 'html.parser')
