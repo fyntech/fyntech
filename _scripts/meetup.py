@@ -45,6 +45,6 @@ def getEvent(name, organizer, category):
                 f.write('dateStart: "' + eventStart + '"\n')
                 f.write('location: "' + eventLocation + '"\n')
                 f.write('link: "' + eventLink + '"\n')
-                f.write('organizer: "UCL tech events"\n')
-                f.write('category: "ucltechevents"\n')
+                f.write('organizer: "' + organizer + "\n')
+                f.write('category: "' + category + '"\n')
                 f.write('---\n')
