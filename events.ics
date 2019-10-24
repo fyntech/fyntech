@@ -1,0 +1,298 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:http://www.fyntech.dk/
+METHOD:PUBLISH
+NAME:Fyntech - Tech Events på Fyn
+X-WR-CALNAME:Fyntech - Tech Events på Fyn
+DESCRIPTION:En samling af spændende og interessante Tech relaterede events
+  på Fyn.
+X-WR-CALDESC:En samling af spændende og interessante Tech relaterede event
+ s på Fyn.
+TIMEZONE-ID:Europe/Copenhagen
+X-WR-TIMEZONE:Europe/Copenhagen
+REFRESH-INTERVAL;VALUE=DURATION:PT24H
+X-PUBLISHED-TTL:PT24H
+BEGIN:VEVENT
+UID:8cf832267ea130b82eabf8b4108f77ec-20191024@fyntech.dk
+ORGANIZER;CN="EAL-tech-events":MAILTO:
+LOCATION:Erhvervsakademi Lillebælt
+SUMMARY:Computer club
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/EAL-tech-events
+ /events/fjpkdqyznbgc/
+CLASS:PUBLIC
+DTSTART:20191024T150000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:84987a43924046637192f27b71001321-20191024@fyntech.dk
+ORGANIZER;CN="Cloud Club":MAILTO:
+LOCATION:Funen Business
+SUMMARY:Microsoft Azure Developer Camp 
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/cloud-club-dk/e
+ vents/264747384/
+CLASS:PUBLIC
+DTSTART:20191024T050000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:39b53c9536f478d706b248f37083d09e-20191029@fyntech.dk
+ORGANIZER;CN="Cloud Club":MAILTO:
+LOCATION:Studenterhus Odense
+SUMMARY:Entrepreneurship
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/cloud-club-dk/e
+ vents/263087466/
+CLASS:PUBLIC
+DTSTART:20191029T150000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:4e78813ef98e148531e8e3e020c3627a-20191031@fyntech.dk
+ORGANIZER;CN="PROSA":MAILTO:
+LOCATION:PROSA Odense\, Overgade 54\, 5000 Odense C
+SUMMARY:Møde i LINK
+DESCRIPTION:Legendarisk IT Netværk for Kvinder holder møde med oplæg og 
+ masser af hygge\n\nSign up / more info: https://www.prosa.dk/nc/arrangemen
+ ter/arrangement/moede-i-link/
+CLASS:PUBLIC
+DTSTART:20191031T160000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:f3c1e10d006fe5e7ea71efe8447f4ffe-20191106@fyntech.dk
+ORGANIZER;CN="PROSA":MAILTO:
+LOCATION:PROSA Odense\, Overgade 54\, 5000 Odense C
+SUMMARY:Brætspilsaften
+DESCRIPTION:Kom til en hyggelig brætspilsaften med PROSA UNG\n\nSign up / 
+ more info: https://www.prosa.dk/nc/arrangementer/arrangement/braetspilsaft
+ en-7/
+CLASS:PUBLIC
+DTSTART:20191106T160000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:8cf832267ea130b82eabf8b4108f77ec-20191107@fyntech.dk
+ORGANIZER;CN="EAL-tech-events":MAILTO:
+LOCATION:Erhvervsakademi Lillebælt
+SUMMARY:Computer club
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/EAL-tech-events
+ /events/fjpkdqyzpbkb/
+CLASS:PUBLIC
+DTSTART:20191107T170000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:1585146683717a5d2cc9459a149b2d8f-20191113@fyntech.dk
+ORGANIZER;CN="PROSA":MAILTO:
+LOCATION:Syddansk Universitet\, Odense\, Campusvej 55\, 5230 Odense M
+SUMMARY:Bankoaften
+DESCRIPTION:Kom til bankoaften med Lån &amp; Spar, PROSA, IMADA Festminist
+ erium og Runa Forsikring.Der kommer til at være masser af fede præmier, 
+ og det er gratis at…\n\nSign up / more info: https://www.prosa.dk/nc/arr
+ angementer/arrangement/bankoaften/
+CLASS:PUBLIC
+DTSTART:20191113T153000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:a9c3963a71929822a3e82194d5a6e4f0-20191119@fyntech.dk
+ORGANIZER;CN="PROSA":MAILTO:
+LOCATION:PROSA Odense\, Overgade 54\, 5000 Odense C
+SUMMARY:Core Infrastructure and BGP intro
+DESCRIPTION:Hvor ofte laver du et nyt netværk? Helt fra bunden? Hvis du nu
+  fik en IPv6 /48, Ansible playbooks og til opgave at gøre det på 4 timer
+ , er du så klar?\n\nSign up / more info: https://www.prosa.dk/nc/arrangem
+ enter/arrangement/core-infrastructure-and-bgp-intro/
+CLASS:PUBLIC
+DTSTART:20191119T160000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:a75fa861f9156460193f3014d4600d11-20191120@fyntech.dk
+ORGANIZER;CN="Umbraco DK Meetup":MAILTO:
+LOCATION:Vertica A/S
+SUMMARY:Umbraco Aarhus Meetup
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/umbracodkmeetup
+ /events/265738753/
+CLASS:PUBLIC
+DTSTART:20191120T150000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:8cf832267ea130b82eabf8b4108f77ec-20191121@fyntech.dk
+ORGANIZER;CN="EAL-tech-events":MAILTO:
+LOCATION:Erhvervsakademi Lillebælt
+SUMMARY:Computer club
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/EAL-tech-events
+ /events/fjpkdqyzpbcc/
+CLASS:PUBLIC
+DTSTART:20191121T170000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:aa7191119d0783199667a0daa0c31877-20191126@fyntech.dk
+ORGANIZER;CN="Cloud Club":MAILTO:
+LOCATION:SDU
+SUMMARY:Mærsk 
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/cloud-club-dk/e
+ vents/263087959/
+CLASS:PUBLIC
+DTSTART:20191126T150000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:10327d83788191f0dfc2a358dc85eca9-20191204@fyntech.dk
+ORGANIZER;CN="PROSA":MAILTO:
+LOCATION:PROSA Odense\, Overgade 54\, 5000 Odense C
+SUMMARY:Wordpress for øvede
+DESCRIPTION:Bliv endnu bedre til Wordpress sammen med andre øvede.\n\nSign
+  up / more info: https://www.prosa.dk/nc/arrangementer/arrangement/wordpre
+ ss-for-oevede/
+CLASS:PUBLIC
+DTSTART:20191204T160000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:8cf832267ea130b82eabf8b4108f77ec-20191205@fyntech.dk
+ORGANIZER;CN="EAL-tech-events":MAILTO:
+LOCATION:Erhvervsakademi Lillebælt
+SUMMARY:Computer club
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/EAL-tech-events
+ /events/fjpkdqyzqbhb/
+CLASS:PUBLIC
+DTSTART:20191205T170000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:9e522c1ec723c79276fb6f4398eb65bf-20191217@fyntech.dk
+ORGANIZER;CN="Cloud Club":MAILTO:
+LOCATION:COWORKING PLUS
+SUMMARY:Aktiedysten + x-mas / networking event 
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/cloud-club-dk/e
+ vents/263088091/
+CLASS:PUBLIC
+DTSTART:20191217T150000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:8cf832267ea130b82eabf8b4108f77ec-20191219@fyntech.dk
+ORGANIZER;CN="EAL-tech-events":MAILTO:
+LOCATION:Erhvervsakademi Lillebælt
+SUMMARY:Computer club
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/EAL-tech-events
+ /events/fjpkdqyzqbzb/
+CLASS:PUBLIC
+DTSTART:20191219T170000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:8cf832267ea130b82eabf8b4108f77ec-20200102@fyntech.dk
+ORGANIZER;CN="EAL-tech-events":MAILTO:
+LOCATION:Erhvervsakademi Lillebælt
+SUMMARY:Computer club
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/EAL-tech-events
+ /events/fjpkdqybccbdb/
+CLASS:PUBLIC
+DTSTART:20200102T170000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:8cf832267ea130b82eabf8b4108f77ec-20200116@fyntech.dk
+ORGANIZER;CN="EAL-tech-events":MAILTO:
+LOCATION:Erhvervsakademi Lillebælt
+SUMMARY:Computer club
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/EAL-tech-events
+ /events/fjpkdqybccbvb/
+CLASS:PUBLIC
+DTSTART:20200116T170000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:8cf832267ea130b82eabf8b4108f77ec-20200130@fyntech.dk
+ORGANIZER;CN="EAL-tech-events":MAILTO:
+LOCATION:Erhvervsakademi Lillebælt
+SUMMARY:Computer club
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/EAL-tech-events
+ /events/fjpkdqybccbnc/
+CLASS:PUBLIC
+DTSTART:20200130T170000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:8cf832267ea130b82eabf8b4108f77ec-20200213@fyntech.dk
+ORGANIZER;CN="EAL-tech-events":MAILTO:
+LOCATION:Erhvervsakademi Lillebælt
+SUMMARY:Computer club
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/EAL-tech-events
+ /events/fjpkdqybcdbrb/
+CLASS:PUBLIC
+DTSTART:20200213T170000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:8cf832267ea130b82eabf8b4108f77ec-20200227@fyntech.dk
+ORGANIZER;CN="EAL-tech-events":MAILTO:
+LOCATION:Erhvervsakademi Lillebælt
+SUMMARY:Computer club
+DESCRIPTION:\n\nSign up / more info: https://www.meetup.com/EAL-tech-events
+ /events/fjpkdqybcdbkc/
+CLASS:PUBLIC
+DTSTART:20200227T170000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+BEGIN:VEVENT
+UID:f2a66b2188de8253cfc3d02e98c8a164-20200417@fyntech.dk
+ORGANIZER;CN="PROSA":MAILTO:
+LOCATION:PROSA Odense\, Overgade 54\, 5000 Odense C
+SUMMARY:Fredagsbar: GNU Parallel 10 års reception
+DESCRIPTION:Vi holder fredagsbar parallelt med bl.a. København.Temaet er G
+ NU Parallel, som fylder 10 år. Så tag dit mest parallelle humør med og 
+ få et par øl…\n\nSign up / more info: https://www.prosa.dk/nc/arrangem
+ enter/arrangement/odense-fredagsbar-gnu-parallel-10-aars-reception/
+CLASS:PUBLIC
+DTSTART:20200417T130000Z
+DTSTAMP:20191024T044145Z
+LAST-MODIFIED:20191024T044145Z
+SEQUENCE:1571892105
+END:VEVENT
+END:VCALENDAR
